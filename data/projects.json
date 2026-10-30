@@ -319,6 +319,7 @@
       }
     ],
     "github": "https://github.com/lnwtar/shopping_Project",
+    "githubLabel": "Web Shopping on GitHub",
     "contributions": "Designed and implemented the front-end flows and connected them to a Node.js and MySQL application structure.",
     "cover": {
       "src": "assets/projects/fashion-ecommerce/gallery-01-1600.webp",
@@ -586,12 +587,6 @@
       {
         "src": "assets/projects/seizure-mission-roblox/gallery-07-1600.webp",
         "srcset": "assets/projects/seizure-mission-roblox/gallery-07-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-07-1600.webp 1600w",
-        "alt": "Expanded Roblox school scene from a later development iteration.",
-        "caption": "Expanded Roblox school scene from a later development iteration."
-      },
-      {
-        "src": "assets/projects/seizure-mission-roblox/gallery-08-1600.webp",
-        "srcset": "assets/projects/seizure-mission-roblox/gallery-08-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-08-1600.webp 1600w",
         "alt": "NPC interaction in the outdoor school environment.",
         "caption": "NPC interaction in the outdoor school environment."
       }

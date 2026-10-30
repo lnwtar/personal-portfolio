@@ -8,7 +8,7 @@ A responsive, recruiter-focused portfolio for Kantapon Thanwisetwong. The site i
 - Accessible sticky navigation and mobile menu
 - Data-driven project gallery with URL-synced category filters
 - Reusable case-study page with thumbnail gallery, previous/next controls, captions, fullscreen lightbox, keyboard support, and touch swipe
-- 57 verified local project images across 9 projects, optimized to WebP at 960 px and 1600 px
+- 56 verified local project images across 10 projects, optimized to WebP at 960 px and 1600 px
 - Clearly labelled image-request placeholders where project evidence is still missing
 - Downloadable PDF resume
 - Keyboard focus styles and reduced-motion support

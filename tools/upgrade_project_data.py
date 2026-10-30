@@ -69,6 +69,7 @@ UPDATES = {
             "Merchandise detail screen showing the product gallery and selection controls.",
         ]),
         "github": "https://github.com/lnwtar/shopping_Project",
+        "githubLabel": "Web Shopping on GitHub",
     },
     "vr-hospital": {
         "solution": "A structured Unity XR journey uses environmental landmarks, consistent interactable cues, audio, and an explicit end state to guide users through the hospital and dental-clinic space.",
@@ -110,7 +111,6 @@ UPDATES = {
             "Mission prototype with an in-game character and health-learning prompt.",
             "Decision screen used to guide a player through the response scenario.",
             "In-game choice interface presenting seizure-response actions.",
-            "Expanded Roblox school scene from a later development iteration.",
             "NPC interaction in the outdoor school environment.",
         ]),
     },

@@ -198,7 +198,7 @@ async function init() {
       link.href = project.github;
       link.target = '_blank';
       link.rel = 'noreferrer';
-      link.textContent = 'View GitHub Repository ↗';
+      link.textContent = `${project.githubLabel || 'View GitHub Repository'} ↗`;
       $('#detail-links').append(heading, link);
     }
 

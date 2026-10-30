@@ -39,7 +39,7 @@ function renderProjects() {
         <div class="tags">${project.technologies.slice(0, 4).map(item => `<span class="tag">${escapeHtml(item)}</span>`).join('')}</div>
         <div class="project-actions">
           <a class="project-link" href="${projectHref(project)}">View Project <span aria-hidden="true">→</span></a>
-          ${project.github ? `<a class="github-link" href="${escapeHtml(project.github)}" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>` : ''}
+          ${project.github ? `<a class="github-link" href="${escapeHtml(project.github)}" target="_blank" rel="noreferrer">${escapeHtml(project.githubLabel || 'GitHub')} <span aria-hidden="true">↗</span></a>` : ''}
         </div>
       </div>
     </article>`).join('');
