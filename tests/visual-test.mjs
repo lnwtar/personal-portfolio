@@ -123,8 +123,8 @@ for (const projectSlug of projectSlugs) {
   assert.notEqual((await detail.locator('#detail-title').textContent()).trim(), 'Project Not Found', `${projectSlug} detail page should render`);
 }
 await detail.goto(`${baseUrl}/projects/project.html?slug=fashion-ecommerce`, { waitUntil: 'networkidle' });
-assert.equal((await detail.locator('.detail-github').textContent()).trim(), 'Web Shopping on GitHub ↗');
-assert.equal(await detail.locator('.detail-github').getAttribute('href'), 'https://github.com/lnwtar/shopping_Project');
+assert.equal((await detail.locator('.detail-github').textContent()).trim(), 'Live Web Shopping Demo ↗');
+assert.equal(await detail.locator('.detail-github').getAttribute('href'), 'https://lnwtar.github.io/shopping_Project/');
 await detail.goto(`${baseUrl}/projects/project.html?slug=seizure-mission-roblox`, { waitUntil: 'networkidle' });
 assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '1 / 7', 'Removed Roblox image must not remain in the gallery');
 if (detailErrors.length) failures.push(`detail: ${detailErrors.join(' | ')}`);

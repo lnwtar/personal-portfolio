@@ -68,8 +68,8 @@ UPDATES = {
             "Admin or seller management screen connected to the store workflow.",
             "Merchandise detail screen showing the product gallery and selection controls.",
         ]),
-        "github": "https://github.com/lnwtar/shopping_Project",
-        "githubLabel": "Web Shopping on GitHub",
+        "github": "https://lnwtar.github.io/shopping_Project/",
+        "githubLabel": "Live Web Shopping Demo",
     },
     "vr-hospital": {
         "solution": "A structured Unity XR journey uses environmental landmarks, consistent interactable cues, audio, and an explicit end state to guide users through the hospital and dental-clinic space.",

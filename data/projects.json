@@ -318,8 +318,8 @@
         "caption": "Merchandise detail screen showing the product gallery and selection controls."
       }
     ],
-    "github": "https://github.com/lnwtar/shopping_Project",
-    "githubLabel": "Web Shopping on GitHub",
+    "github": "https://lnwtar.github.io/shopping_Project/",
+    "githubLabel": "Live Web Shopping Demo",
     "contributions": "Designed and implemented the front-end flows and connected them to a Node.js and MySQL application structure.",
     "cover": {
       "src": "assets/projects/fashion-ecommerce/gallery-01-1600.webp",
