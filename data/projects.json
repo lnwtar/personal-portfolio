@@ -1,0 +1,836 @@
+[
+  {
+    "slug": "v-resq",
+    "title": "V-ResQ — VR Rescue Robot Control System",
+    "category": "vr-ar",
+    "categoryLabel": "VR / Robotics / Research",
+    "year": "2026",
+    "summary": "A research-oriented VR interface for remotely controlling a rescue robot through a distributed architecture.",
+    "problem": "Rescue operators need a clear, responsive way to control a robot and understand its state while remaining outside hazardous environments.",
+    "role": "Team member contributing to prototype development, system integration, testing plans, and technical documentation.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Meta Quest 3",
+      "Raspberry Pi 5",
+      "ESP32-S3",
+      "UDP"
+    ],
+    "outcome": "A functional research prototype and documented test plan covering communication, control stability, safety behavior, and participant considerations. Performance results are not claimed here.",
+    "objectives": [
+      "Create an immersive robot-control interface",
+      "Return live sensor feedback to the operator",
+      "Design safe fallback behavior when communication is interrupted"
+    ],
+    "process": [
+      "Mapped the distributed control architecture",
+      "Integrated VR input, edge processing, and embedded motor control",
+      "Prepared safety and user-study documentation"
+    ],
+    "lessons": "Safety feedback and system status are central UX requirements when an interface controls physical hardware.",
+    "featured": true,
+    "solution": "The prototype combines a VR operator interface, distributed robot-control services, live telemetry, and explicit safety states so an operator can understand and control the remote system from one workflow.",
+    "gallery": [
+      {
+        "src": "assets/projects/v-resq/gallery-01-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-01-960.webp 960w, assets/projects/v-resq/gallery-01-1600.webp 1600w",
+        "alt": "V-ResQ research presentation showing the project concept and system context.",
+        "caption": "V-ResQ research presentation showing the project concept and system context."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-02-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-02-960.webp 960w, assets/projects/v-resq/gallery-02-1600.webp 1600w",
+        "alt": "Binary UDP protocol diagram used to describe control communication.",
+        "caption": "Binary UDP protocol diagram used to describe control communication."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-03-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-03-960.webp 960w, assets/projects/v-resq/gallery-03-1600.webp 1600w",
+        "alt": "Hardware and software overview for the V-ResQ prototype.",
+        "caption": "Hardware and software overview for the V-ResQ prototype."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-04-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-04-960.webp 960w, assets/projects/v-resq/gallery-04-1600.webp 1600w",
+        "alt": "Team-management and timeline screen from the project presentation.",
+        "caption": "Team-management and timeline screen from the project presentation."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-05-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-05-960.webp 960w, assets/projects/v-resq/gallery-05-1600.webp 1600w",
+        "alt": "V-ResQ team presentation slide documenting the project group.",
+        "caption": "V-ResQ team presentation slide documenting the project group."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-06-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-06-960.webp 960w, assets/projects/v-resq/gallery-06-1600.webp 1600w",
+        "alt": "V-ResQ web console showing system overview and connection states.",
+        "caption": "V-ResQ web console showing system overview and connection states."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-07-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-07-960.webp 960w, assets/projects/v-resq/gallery-07-1600.webp 1600w",
+        "alt": "Protocol and telemetry status screen in the operator console.",
+        "caption": "Protocol and telemetry status screen in the operator console."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-08-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-08-960.webp 960w, assets/projects/v-resq/gallery-08-1600.webp 1600w",
+        "alt": "Operator console screen documenting control and safety panels.",
+        "caption": "Operator console screen documenting control and safety panels."
+      },
+      {
+        "src": "assets/projects/v-resq/gallery-09-1600.webp",
+        "srcset": "assets/projects/v-resq/gallery-09-960.webp 960w, assets/projects/v-resq/gallery-09-1600.webp 1600w",
+        "alt": "Telemetry-focused console view from the later prototype iteration.",
+        "caption": "Telemetry-focused console view from the later prototype iteration."
+      }
+    ],
+    "contributions": "Team member contributing to prototype development, system integration, testing plans, and technical documentation.",
+    "cover": {
+      "src": "assets/projects/v-resq/gallery-01-1600.webp",
+      "srcset": "assets/projects/v-resq/gallery-01-960.webp 960w, assets/projects/v-resq/gallery-01-1600.webp 1600w",
+      "alt": "V-ResQ research presentation showing the project concept and system context.",
+      "caption": "V-ResQ research presentation showing the project concept and system context."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "badminton-pose-analysis",
+    "title": "Badminton Pose Analysis",
+    "category": "ai-research",
+    "categoryLabel": "AI / Sports Technology",
+    "year": "2026",
+    "summary": "A web application that turns video or webcam pose data into understandable badminton-stroke feedback.",
+    "problem": "Raw pose landmarks are difficult for players and coaches to interpret without a clear analysis workflow and visual feedback.",
+    "role": "Designed and developed the analysis workflow, pose-processing modules, and web interface.",
+    "technologies": [
+      "Python",
+      "MediaPipe",
+      "Machine Learning",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "outcome": "A working local application supporting video or webcam input, pose processing, stroke analysis, and a results dashboard.",
+    "objectives": [
+      "Support video and webcam input",
+      "Classify movement patterns",
+      "Present actionable feedback through a readable dashboard"
+    ],
+    "process": [
+      "Structured the capture-to-result user flow",
+      "Implemented pose and stroke-analysis modules",
+      "Iterated on feedback states and analysis presentation"
+    ],
+    "lessons": "Computer-vision output becomes useful only when uncertainty and movement feedback are translated into plain language.",
+    "featured": true,
+    "solution": "A local web workflow accepts video or webcam input, detects body landmarks, classifies stroke phases, and presents technique feedback in a readable dashboard instead of exposing raw landmark data.",
+    "gallery": [
+      {
+        "src": "assets/projects/badminton-pose-analysis/gallery-01-1600.webp",
+        "srcset": "assets/projects/badminton-pose-analysis/gallery-01-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-01-1600.webp 1600w",
+        "alt": "Early badminton analysis screen with video playback and stroke feedback.",
+        "caption": "Early badminton analysis screen with video playback and stroke feedback."
+      },
+      {
+        "src": "assets/projects/badminton-pose-analysis/gallery-02-1600.webp",
+        "srcset": "assets/projects/badminton-pose-analysis/gallery-02-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-02-1600.webp 1600w",
+        "alt": "Pose-analysis dashboard showing technique metrics beside the source video.",
+        "caption": "Pose-analysis dashboard showing technique metrics beside the source video."
+      },
+      {
+        "src": "assets/projects/badminton-pose-analysis/gallery-03-1600.webp",
+        "srcset": "assets/projects/badminton-pose-analysis/gallery-03-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-03-1600.webp 1600w",
+        "alt": "Input and calibration screen for the badminton analysis workflow.",
+        "caption": "Input and calibration screen for the badminton analysis workflow."
+      },
+      {
+        "src": "assets/projects/badminton-pose-analysis/gallery-04-1600.webp",
+        "srcset": "assets/projects/badminton-pose-analysis/gallery-04-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-04-1600.webp 1600w",
+        "alt": "Analysis result with pose overlay, stroke score, and movement feedback.",
+        "caption": "Analysis result with pose overlay, stroke score, and movement feedback."
+      },
+      {
+        "src": "assets/projects/badminton-pose-analysis/gallery-05-1600.webp",
+        "srcset": "assets/projects/badminton-pose-analysis/gallery-05-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-05-1600.webp 1600w",
+        "alt": "Dashboard comparison view for badminton movement evaluation.",
+        "caption": "Dashboard comparison view for badminton movement evaluation."
+      },
+      {
+        "src": "assets/projects/badminton-pose-analysis/gallery-06-1600.webp",
+        "srcset": "assets/projects/badminton-pose-analysis/gallery-06-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-06-1600.webp 1600w",
+        "alt": "Later badminton analysis prototype with pose landmarks and live metrics.",
+        "caption": "Later badminton analysis prototype with pose landmarks and live metrics."
+      }
+    ],
+    "contributions": "Designed and developed the analysis workflow, pose-processing modules, and web interface.",
+    "cover": {
+      "src": "assets/projects/badminton-pose-analysis/gallery-01-1600.webp",
+      "srcset": "assets/projects/badminton-pose-analysis/gallery-01-960.webp 960w, assets/projects/badminton-pose-analysis/gallery-01-1600.webp 1600w",
+      "alt": "Early badminton analysis screen with video playback and stroke feedback.",
+      "caption": "Early badminton analysis screen with video playback and stroke feedback."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "smart-rehab",
+    "title": "Smart Rehab Leg & Arm",
+    "category": "iot-embedded",
+    "categoryLabel": "Healthcare / Game UX / Sensors",
+    "year": "2025–2026",
+    "summary": "A gamified rehabilitation prototype that maps force and range-of-motion data to real-time play feedback.",
+    "problem": "Repetitive rehabilitation exercises can be difficult to understand and sustain without immediate, motivating feedback.",
+    "role": "Team member contributing to the Unity prototype, sensor-driven interaction, interface feedback, and project documentation.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Load Cell",
+      "Gyroscope",
+      "Sensor Integration"
+    ],
+    "outcome": "A functional prototype with a force gauge, angle display, score, repetitions, and an endless-runner interaction for arm or leg exercises.",
+    "objectives": [
+      "Visualize exercise effort",
+      "Turn movement into game control",
+      "Support both arm and leg exercise concepts"
+    ],
+    "process": [
+      "Mapped sensor readings to game input",
+      "Designed immediate visual feedback",
+      "Adjusted UI anchors and gameplay presentation"
+    ],
+    "lessons": "Gamification works best when scores remain secondary to understandable movement feedback.",
+    "featured": true,
+    "solution": "The Unity prototype maps sensor input to a simple runner-style activity while keeping force, angle, repetitions, and score visible as immediate exercise feedback.",
+    "gallery": [
+      {
+        "src": "assets/projects/smart-rehab/gallery-01-1600.webp",
+        "srcset": "assets/projects/smart-rehab/gallery-01-960.webp 960w, assets/projects/smart-rehab/gallery-01-1600.webp 1600w",
+        "alt": "Unity rehabilitation game prototype with a boat-based movement scene.",
+        "caption": "Unity rehabilitation game prototype with a boat-based movement scene."
+      },
+      {
+        "src": "assets/projects/smart-rehab/gallery-02-1600.webp",
+        "srcset": "assets/projects/smart-rehab/gallery-02-960.webp 960w, assets/projects/smart-rehab/gallery-02-1600.webp 1600w",
+        "alt": "Game view used to test movement feedback and obstacle timing.",
+        "caption": "Game view used to test movement feedback and obstacle timing."
+      },
+      {
+        "src": "assets/projects/smart-rehab/gallery-03-1600.webp",
+        "srcset": "assets/projects/smart-rehab/gallery-03-960.webp 960w, assets/projects/smart-rehab/gallery-03-1600.webp 1600w",
+        "alt": "Prototype scene showing the exercise-controlled character and environment.",
+        "caption": "Prototype scene showing the exercise-controlled character and environment."
+      },
+      {
+        "src": "assets/projects/smart-rehab/gallery-04-1600.webp",
+        "srcset": "assets/projects/smart-rehab/gallery-04-960.webp 960w, assets/projects/smart-rehab/gallery-04-1600.webp 1600w",
+        "alt": "Unity editor view documenting rehabilitation-game interface iteration.",
+        "caption": "Unity editor view documenting rehabilitation-game interface iteration."
+      },
+      {
+        "src": "assets/projects/smart-rehab/gallery-05-1600.webp",
+        "srcset": "assets/projects/smart-rehab/gallery-05-960.webp 960w, assets/projects/smart-rehab/gallery-05-1600.webp 1600w",
+        "alt": "Gameplay feedback iteration with visual movement cues in the Unity scene.",
+        "caption": "Gameplay feedback iteration with visual movement cues in the Unity scene."
+      },
+      {
+        "src": "assets/projects/smart-rehab/gallery-06-1600.webp",
+        "srcset": "assets/projects/smart-rehab/gallery-06-960.webp 960w, assets/projects/smart-rehab/gallery-06-1600.webp 1600w",
+        "alt": "Later prototype screen showing updated environment and feedback elements.",
+        "caption": "Later prototype screen showing updated environment and feedback elements."
+      }
+    ],
+    "contributions": "Team member contributing to the Unity prototype, sensor-driven interaction, interface feedback, and project documentation.",
+    "cover": {
+      "src": "assets/projects/smart-rehab/gallery-01-1600.webp",
+      "srcset": "assets/projects/smart-rehab/gallery-01-960.webp 960w, assets/projects/smart-rehab/gallery-01-1600.webp 1600w",
+      "alt": "Unity rehabilitation game prototype with a boat-based movement scene.",
+      "caption": "Unity rehabilitation game prototype with a boat-based movement scene."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "fashion-ecommerce",
+    "title": "Fashion E-commerce Website",
+    "category": "web",
+    "categoryLabel": "Web Development / UX",
+    "year": "2025",
+    "summary": "An end-to-end fashion shopping experience covering discovery, cart, checkout, accounts, and seller flows.",
+    "problem": "A multi-role store needs consistent navigation and clear state across browsing, purchasing, and account management.",
+    "role": "Designed and implemented the front-end flows and connected them to a Node.js and MySQL application structure.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Node.js",
+      "MySQL"
+    ],
+    "outcome": "A multi-page project covering product categories, product detail, cart, checkout, authentication, profile, seller, and order-success screens.",
+    "objectives": [
+      "Create a coherent shopping journey",
+      "Support customer and seller tasks",
+      "Keep product and checkout information readable"
+    ],
+    "process": [
+      "Organized the information architecture",
+      "Built reusable visual patterns",
+      "Connected user flows to server and database modules"
+    ],
+    "lessons": "Consistent product information and visible cart state reduce friction across a long purchase flow.",
+    "featured": true,
+    "solution": "The application uses a consistent catalog system, reusable product cards, persistent cart state, and dedicated customer and seller flows across a Node.js and MySQL-backed multi-page store.",
+    "gallery": [
+      {
+        "src": "assets/projects/fashion-ecommerce/gallery-01-1600.webp",
+        "srcset": "assets/projects/fashion-ecommerce/gallery-01-960.webp 960w, assets/projects/fashion-ecommerce/gallery-01-1600.webp 1600w",
+        "alt": "Fashion store landing page with campaign imagery and primary navigation.",
+        "caption": "Fashion store landing page with campaign imagery and primary navigation."
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/gallery-02-1600.webp",
+        "srcset": "assets/projects/fashion-ecommerce/gallery-02-960.webp 960w, assets/projects/fashion-ecommerce/gallery-02-1600.webp 1600w",
+        "alt": "Desktop home page showing product discovery and featured content.",
+        "caption": "Desktop home page showing product discovery and featured content."
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/gallery-03-1600.webp",
+        "srcset": "assets/projects/fashion-ecommerce/gallery-03-960.webp 960w, assets/projects/fashion-ecommerce/gallery-03-1600.webp 1600w",
+        "alt": "Category listing screen with filters and a responsive product grid.",
+        "caption": "Category listing screen with filters and a responsive product grid."
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/gallery-04-1600.webp",
+        "srcset": "assets/projects/fashion-ecommerce/gallery-04-960.webp 960w, assets/projects/fashion-ecommerce/gallery-04-1600.webp 1600w",
+        "alt": "Product-detail page with imagery, options, price, and purchase action.",
+        "caption": "Product-detail page with imagery, options, price, and purchase action."
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/gallery-05-1600.webp",
+        "srcset": "assets/projects/fashion-ecommerce/gallery-05-960.webp 960w, assets/projects/fashion-ecommerce/gallery-05-1600.webp 1600w",
+        "alt": "Admin or seller management screen connected to the store workflow.",
+        "caption": "Admin or seller management screen connected to the store workflow."
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/gallery-06-1600.webp",
+        "srcset": "assets/projects/fashion-ecommerce/gallery-06-960.webp 960w, assets/projects/fashion-ecommerce/gallery-06-1600.webp 1600w",
+        "alt": "Merchandise detail screen showing the product gallery and selection controls.",
+        "caption": "Merchandise detail screen showing the product gallery and selection controls."
+      }
+    ],
+    "github": "https://github.com/lnwtar/shopping_Project",
+    "contributions": "Designed and implemented the front-end flows and connected them to a Node.js and MySQL application structure.",
+    "cover": {
+      "src": "assets/projects/fashion-ecommerce/gallery-01-1600.webp",
+      "srcset": "assets/projects/fashion-ecommerce/gallery-01-960.webp 960w, assets/projects/fashion-ecommerce/gallery-01-1600.webp 1600w",
+      "alt": "Fashion store landing page with campaign imagery and primary navigation.",
+      "caption": "Fashion store landing page with campaign imagery and primary navigation."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "vr-hospital",
+    "title": "VR Hospital & Dental Clinic Simulation",
+    "category": "vr-ar",
+    "categoryLabel": "VR / Spatial UX",
+    "year": "2025",
+    "summary": "A healthcare simulation exploring spatial navigation, interaction cues, environmental audio, and a structured VR journey.",
+    "problem": "Users in VR need clear spatial guidance and interaction feedback without relying on conventional screen layouts.",
+    "role": "Built and arranged the Unity XR environment, interactions, scene flow, audio, and completion state.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "XR Interaction Toolkit"
+    ],
+    "outcome": "A navigable hospital and dental-clinic prototype with waiting areas, interactable objects, audio, and an end state.",
+    "objectives": [
+      "Create an understandable spatial route",
+      "Use interaction cues consistently",
+      "Maintain a comfortable scene flow"
+    ],
+    "process": [
+      "Assembled the healthcare environment",
+      "Added XR interactions and audio cues",
+      "Iterated on navigation and completion flow"
+    ],
+    "lessons": "In spatial interfaces, placement, scale, and feedback replace many conventions of flat-screen UI.",
+    "featured": true,
+    "solution": "A structured Unity XR journey uses environmental landmarks, consistent interactable cues, audio, and an explicit end state to guide users through the hospital and dental-clinic space.",
+    "gallery": [
+      {
+        "src": "assets/projects/vr-hospital/gallery-01-1600.webp",
+        "srcset": "assets/projects/vr-hospital/gallery-01-960.webp 960w, assets/projects/vr-hospital/gallery-01-1600.webp 1600w",
+        "alt": "Unity editor view of the hospital reception and waiting environment.",
+        "caption": "Unity editor view of the hospital reception and waiting environment."
+      },
+      {
+        "src": "assets/projects/vr-hospital/gallery-02-1600.webp",
+        "srcset": "assets/projects/vr-hospital/gallery-02-960.webp 960w, assets/projects/vr-hospital/gallery-02-1600.webp 1600w",
+        "alt": "Hospital corridor scene used to evaluate spatial navigation and scale.",
+        "caption": "Hospital corridor scene used to evaluate spatial navigation and scale."
+      },
+      {
+        "src": "assets/projects/vr-hospital/gallery-03-1600.webp",
+        "srcset": "assets/projects/vr-hospital/gallery-03-960.webp 960w, assets/projects/vr-hospital/gallery-03-1600.webp 1600w",
+        "alt": "In-world waiting interaction with a visible guidance panel.",
+        "caption": "In-world waiting interaction with a visible guidance panel."
+      },
+      {
+        "src": "assets/projects/vr-hospital/gallery-04-1600.webp",
+        "srcset": "assets/projects/vr-hospital/gallery-04-960.webp 960w, assets/projects/vr-hospital/gallery-04-1600.webp 1600w",
+        "alt": "Dental-clinic environment with an interaction prompt in the Unity editor.",
+        "caption": "Dental-clinic environment with an interaction prompt in the Unity editor."
+      },
+      {
+        "src": "assets/projects/vr-hospital/gallery-05-1600.webp",
+        "srcset": "assets/projects/vr-hospital/gallery-05-960.webp 960w, assets/projects/vr-hospital/gallery-05-1600.webp 1600w",
+        "alt": "Hospital prototype play view showing room layout and interface cues.",
+        "caption": "Hospital prototype play view showing room layout and interface cues."
+      },
+      {
+        "src": "assets/projects/vr-hospital/gallery-06-1600.webp",
+        "srcset": "assets/projects/vr-hospital/gallery-06-960.webp 960w, assets/projects/vr-hospital/gallery-06-1600.webp 1600w",
+        "alt": "Detailed clinical-room scene from the completed environment iteration.",
+        "caption": "Detailed clinical-room scene from the completed environment iteration."
+      }
+    ],
+    "contributions": "Built and arranged the Unity XR environment, interactions, scene flow, audio, and completion state.",
+    "cover": {
+      "src": "assets/projects/vr-hospital/gallery-01-1600.webp",
+      "srcset": "assets/projects/vr-hospital/gallery-01-960.webp 960w, assets/projects/vr-hospital/gallery-01-1600.webp 1600w",
+      "alt": "Unity editor view of the hospital reception and waiting environment.",
+      "caption": "Unity editor view of the hospital reception and waiting environment."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "countball",
+    "title": "CountBall Mobile Game",
+    "category": "vr-ar",
+    "categoryLabel": "Mobile Game / Interaction",
+    "year": "2025",
+    "summary": "An Android ball-counting game with spawning, basket interaction, game-state management, and scene flow.",
+    "problem": "A simple mobile game needs an immediately understandable loop, responsive interaction, and clear state changes.",
+    "role": "Implemented the Unity gameplay scripts, scene flow, basket interaction, and Android build.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Android"
+    ],
+    "outcome": "A playable prototype with packaged APK builds.",
+    "objectives": [
+      "Create a clear start-to-play loop",
+      "Handle spawning and scoring",
+      "Package the project for Android testing"
+    ],
+    "process": [
+      "Built core gameplay scripts",
+      "Connected game-manager and scene states",
+      "Tested packaged Android builds"
+    ],
+    "lessons": "Small games benefit from strong feedback and predictable state transitions more than feature volume.",
+    "featured": false,
+    "solution": "The Unity game uses a compact start-to-play loop, physics-based ball spawning, basket interaction, scoring, and scene-state scripts packaged for Android testing.",
+    "gallery": [
+      {
+        "src": "assets/projects/countball/gallery-01-1600.webp",
+        "srcset": "assets/projects/countball/gallery-01-960.webp 960w, assets/projects/countball/gallery-01-1600.webp 1600w",
+        "alt": "Unity editor view documenting the ball-spawning gameplay prototype.",
+        "caption": "Unity editor view documenting the ball-spawning gameplay prototype."
+      },
+      {
+        "src": "assets/projects/countball/gallery-02-1600.webp",
+        "srcset": "assets/projects/countball/gallery-02-960.webp 960w, assets/projects/countball/gallery-02-1600.webp 1600w",
+        "alt": "CountBall game scene with interactive objects and mobile-oriented controls.",
+        "caption": "CountBall game scene with interactive objects and mobile-oriented controls."
+      },
+      {
+        "src": "assets/projects/countball/gallery-03-1600.webp",
+        "srcset": "assets/projects/countball/gallery-03-960.webp 960w, assets/projects/countball/gallery-03-1600.webp 1600w",
+        "alt": "Gameplay test view showing ball and basket interaction in the scene.",
+        "caption": "Gameplay test view showing ball and basket interaction in the scene."
+      },
+      {
+        "src": "assets/projects/countball/gallery-04-1600.webp",
+        "srcset": "assets/projects/countball/gallery-04-960.webp 960w, assets/projects/countball/gallery-04-1600.webp 1600w",
+        "alt": "Unity setup screen used while tuning the core counting loop.",
+        "caption": "Unity setup screen used while tuning the core counting loop."
+      },
+      {
+        "src": "assets/projects/countball/gallery-05-1600.webp",
+        "srcset": "assets/projects/countball/gallery-05-960.webp 960w, assets/projects/countball/gallery-05-1600.webp 1600w",
+        "alt": "Later gameplay iteration with updated scene and interaction state.",
+        "caption": "Later gameplay iteration with updated scene and interaction state."
+      },
+      {
+        "src": "assets/projects/countball/gallery-06-1600.webp",
+        "srcset": "assets/projects/countball/gallery-06-960.webp 960w, assets/projects/countball/gallery-06-1600.webp 1600w",
+        "alt": "CountBall test scene documenting the packaged game workflow.",
+        "caption": "CountBall test scene documenting the packaged game workflow."
+      }
+    ],
+    "contributions": "Implemented the Unity gameplay scripts, scene flow, basket interaction, and Android build.",
+    "cover": {
+      "src": "assets/projects/countball/gallery-01-1600.webp",
+      "srcset": "assets/projects/countball/gallery-01-960.webp 960w, assets/projects/countball/gallery-01-1600.webp 1600w",
+      "alt": "Unity editor view documenting the ball-spawning gameplay prototype.",
+      "caption": "Unity editor view documenting the ball-spawning gameplay prototype."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "bathub-whale-ar",
+    "title": "BATHUB WHALE AR",
+    "category": "vr-ar",
+    "categoryLabel": "Augmented Reality / 3D",
+    "year": "2025",
+    "summary": "An image-target AR experience with interactive 3D objects, rotation controls, lighting adjustments, and a mobile menu.",
+    "problem": "AR content needs discoverable controls and stable presentation around physical image targets.",
+    "role": "Developed the Unity scenes, image-target setup, menu flow, object rotation, and lighting controls.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Vuforia",
+      "Image Targets",
+      "3D Assets"
+    ],
+    "outcome": "A multi-target AR prototype with a titled main menu and interactive object controls.",
+    "objectives": [
+      "Recognize multiple image targets",
+      "Expose simple 3D controls",
+      "Keep the mobile interaction lightweight"
+    ],
+    "process": [
+      "Configured target scenes",
+      "Implemented rotation and lighting scripts",
+      "Connected the menu and AR scene"
+    ],
+    "lessons": "AR controls must remain visible without competing with the physical-world content.",
+    "featured": false,
+    "solution": "The Unity and Vuforia build organizes image targets into separate scenes and pairs them with lightweight rotation, lighting, and menu controls for mobile use.",
+    "gallery": [],
+    "missingImages": [
+      "A phone screenshot showing the whale model anchored to its image target.",
+      "The BATHUB WHALE main menu and target-selection flow.",
+      "A close view of the rotation and lighting controls in use."
+    ],
+    "contributions": "Developed the Unity scenes, image-target setup, menu flow, object rotation, and lighting controls.",
+    "cover": null
+  },
+  {
+    "slug": "seizure-mission-roblox",
+    "title": "ภารกิจพิชิตชัก — Roblox Educational Game",
+    "category": "vr-ar",
+    "categoryLabel": "Educational Game / Health Communication",
+    "year": "2026",
+    "summary": "A school-based Roblox learning experience that uses missions, NPCs, and in-game UI to communicate seizure-response knowledge.",
+    "problem": "Health-response guidance can be difficult to remember when presented only as static information.",
+    "role": "Developed multiple Roblox Studio iterations containing the school environment, classroom, NPCs, interface elements, sound, and scripts.",
+    "technologies": [
+      "Roblox Studio",
+      "Lua / Luau",
+      "Roblox GUI",
+      "3D Environment Design"
+    ],
+    "outcome": "Five distinct development files document iteration from early school prototypes to the final-titled experience. Exact gameplay rules remain to be confirmed in a full Studio playtest.",
+    "objectives": [
+      "Teach through a scenario-based mission",
+      "Make guidance approachable",
+      "Use NPC and interface feedback to guide decisions"
+    ],
+    "process": [
+      "Built the school and classroom setting",
+      "Added NPC and interface components",
+      "Iterated across several saved versions"
+    ],
+    "lessons": "Educational game UX must balance clarity, emotional tone, and player agency.",
+    "featured": true,
+    "solution": "A mission-based Roblox experience places guidance inside a familiar school scenario, using NPC dialogue, decision screens, environmental cues, and feedback to reinforce seizure-response knowledge.",
+    "gallery": [
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-01-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-01-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-01-1600.webp 1600w",
+        "alt": "Roblox Studio NPC dialogue prototype inside the school environment.",
+        "caption": "Roblox Studio NPC dialogue prototype inside the school environment."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-02-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-02-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-02-1600.webp 1600w",
+        "alt": "Classroom and hallway scene used for the educational mission flow.",
+        "caption": "Classroom and hallway scene used for the educational mission flow."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-03-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-03-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-03-1600.webp 1600w",
+        "alt": "Roblox school environment documenting an early level-layout iteration.",
+        "caption": "Roblox school environment documenting an early level-layout iteration."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-04-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-04-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-04-1600.webp 1600w",
+        "alt": "Mission prototype with an in-game character and health-learning prompt.",
+        "caption": "Mission prototype with an in-game character and health-learning prompt."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-05-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-05-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-05-1600.webp 1600w",
+        "alt": "Decision screen used to guide a player through the response scenario.",
+        "caption": "Decision screen used to guide a player through the response scenario."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-06-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-06-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-06-1600.webp 1600w",
+        "alt": "In-game choice interface presenting seizure-response actions.",
+        "caption": "In-game choice interface presenting seizure-response actions."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-07-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-07-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-07-1600.webp 1600w",
+        "alt": "Expanded Roblox school scene from a later development iteration.",
+        "caption": "Expanded Roblox school scene from a later development iteration."
+      },
+      {
+        "src": "assets/projects/seizure-mission-roblox/gallery-08-1600.webp",
+        "srcset": "assets/projects/seizure-mission-roblox/gallery-08-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-08-1600.webp 1600w",
+        "alt": "NPC interaction in the outdoor school environment.",
+        "caption": "NPC interaction in the outdoor school environment."
+      }
+    ],
+    "contributions": "Developed multiple Roblox Studio iterations containing the school environment, classroom, NPCs, interface elements, sound, and scripts.",
+    "cover": {
+      "src": "assets/projects/seizure-mission-roblox/gallery-01-1600.webp",
+      "srcset": "assets/projects/seizure-mission-roblox/gallery-01-960.webp 960w, assets/projects/seizure-mission-roblox/gallery-01-1600.webp 1600w",
+      "alt": "Roblox Studio NPC dialogue prototype inside the school environment.",
+      "caption": "Roblox Studio NPC dialogue prototype inside the school environment."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "ai-human-detection",
+    "title": "AI Human Detection for Disaster Response",
+    "category": "ai-research",
+    "categoryLabel": "Computer Vision / Edge AI",
+    "year": "2026",
+    "summary": "A V-ResQ module for detecting people and classifying disaster-scene postures on an edge-computing target.",
+    "problem": "A remote operator needs support identifying people and posture states in visually difficult environments.",
+    "role": "Prepared the detection workflow, dataset structure, model experiments, and edge-deployment project files.",
+    "technologies": [
+      "YOLO11n",
+      "PyTorch",
+      "OpenCV",
+      "C2A Dataset",
+      "Raspberry Pi 5"
+    ],
+    "outcome": "A documented prototype pipeline for posture classes including bent, kneeling, lying, sitting, and upright. No unverified accuracy metric is presented.",
+    "objectives": [
+      "Detect people in disaster imagery",
+      "Represent posture states",
+      "Prepare the pipeline for edge use"
+    ],
+    "process": [
+      "Structured image and label data",
+      "Configured YOLO experiments",
+      "Prepared inference and validation scripts"
+    ],
+    "lessons": "Model output should be treated as decision support and communicated with appropriate uncertainty.",
+    "featured": false,
+    "solution": "The module structures labeled posture data for YOLO training, validates predictions visually, and prepares an inference workflow intended for an edge-computing target.",
+    "gallery": [
+      {
+        "src": "assets/projects/ai-human-detection/gallery-01-1600.webp",
+        "srcset": "assets/projects/ai-human-detection/gallery-01-960.webp 960w, assets/projects/ai-human-detection/gallery-01-1600.webp 1600w",
+        "alt": "Validation batch with predicted bounding boxes and posture classes.",
+        "caption": "Validation batch with predicted bounding boxes and posture classes."
+      },
+      {
+        "src": "assets/projects/ai-human-detection/gallery-02-1600.webp",
+        "srcset": "assets/projects/ai-human-detection/gallery-02-960.webp 960w, assets/projects/ai-human-detection/gallery-02-1600.webp 1600w",
+        "alt": "Second validation batch showing predicted people and posture labels.",
+        "caption": "Second validation batch showing predicted people and posture labels."
+      },
+      {
+        "src": "assets/projects/ai-human-detection/gallery-03-1600.webp",
+        "srcset": "assets/projects/ai-human-detection/gallery-03-960.webp 960w, assets/projects/ai-human-detection/gallery-03-1600.webp 1600w",
+        "alt": "Additional validation batch from the YOLO experiment output.",
+        "caption": "Additional validation batch from the YOLO experiment output."
+      },
+      {
+        "src": "assets/projects/ai-human-detection/gallery-04-1600.webp",
+        "srcset": "assets/projects/ai-human-detection/gallery-04-960.webp 960w, assets/projects/ai-human-detection/gallery-04-1600.webp 1600w",
+        "alt": "Confusion matrix generated by the detection validation run.",
+        "caption": "Confusion matrix generated by the detection validation run."
+      },
+      {
+        "src": "assets/projects/ai-human-detection/gallery-05-1600.webp",
+        "srcset": "assets/projects/ai-human-detection/gallery-05-960.webp 960w, assets/projects/ai-human-detection/gallery-05-1600.webp 1600w",
+        "alt": "Precision–recall curves produced by the YOLO experiment.",
+        "caption": "Precision–recall curves produced by the YOLO experiment."
+      }
+    ],
+    "contributions": "Prepared the detection workflow, dataset structure, model experiments, and edge-deployment project files.",
+    "cover": {
+      "src": "assets/projects/ai-human-detection/gallery-01-1600.webp",
+      "srcset": "assets/projects/ai-human-detection/gallery-01-960.webp 960w, assets/projects/ai-human-detection/gallery-01-1600.webp 1600w",
+      "alt": "Validation batch with predicted bounding boxes and posture classes.",
+      "caption": "Validation batch with predicted bounding boxes and posture classes."
+    },
+    "missingImages": []
+  },
+  {
+    "slug": "aruco-tracking",
+    "title": "ArUco Robot Tracking System",
+    "category": "ai-research",
+    "categoryLabel": "Computer Vision / Robotics",
+    "year": "2026",
+    "summary": "An OpenCV-based marker system for observing robot position and movement from a camera feed.",
+    "problem": "Robot movement tests need a repeatable visual reference for estimating position and direction.",
+    "role": "Implemented marker generation, detection, tracking utilities, and server integration files.",
+    "technologies": [
+      "Python",
+      "OpenCV",
+      "ArUco Markers",
+      "Server Integration"
+    ],
+    "outcome": "A working project structure for generating markers and detecting them in the robot-testing workflow.",
+    "objectives": [
+      "Generate trackable markers",
+      "Detect marker position",
+      "Share tracking information with the control workflow"
+    ],
+    "process": [
+      "Generated marker assets",
+      "Implemented camera detection",
+      "Connected detection to the project server"
+    ],
+    "lessons": "Reliable tracking depends on camera placement, marker scale, and clear feedback when detection is lost.",
+    "featured": false,
+    "solution": "The project generates known ArUco markers, detects them through OpenCV, and exposes marker position and orientation data to the wider robot-testing workflow.",
+    "gallery": [
+      {
+        "src": "assets/projects/aruco-tracking/gallery-01-1600.webp",
+        "srcset": "assets/projects/aruco-tracking/gallery-01-960.webp 960w, assets/projects/aruco-tracking/gallery-01-1600.webp 1600w",
+        "alt": "Generated ArUco marker 0 used by the tracking workflow.",
+        "caption": "Generated ArUco marker 0 used by the tracking workflow."
+      },
+      {
+        "src": "assets/projects/aruco-tracking/gallery-02-1600.webp",
+        "srcset": "assets/projects/aruco-tracking/gallery-02-960.webp 960w, assets/projects/aruco-tracking/gallery-02-1600.webp 1600w",
+        "alt": "Generated ArUco marker 1 used for multi-marker testing.",
+        "caption": "Generated ArUco marker 1 used for multi-marker testing."
+      }
+    ],
+    "missingImages": [
+      "A camera-frame screenshot with detected marker corners and ID overlay.",
+      "A robot test showing position data beside the live camera feed."
+    ],
+    "github": "https://github.com/lnwtar/backOceanX",
+    "contributions": "Implemented marker generation, detection, tracking utilities, and server integration files.",
+    "cover": {
+      "src": "assets/projects/aruco-tracking/gallery-01-1600.webp",
+      "srcset": "assets/projects/aruco-tracking/gallery-01-960.webp 960w, assets/projects/aruco-tracking/gallery-01-1600.webp 1600w",
+      "alt": "Generated ArUco marker 0 used by the tracking workflow.",
+      "caption": "Generated ArUco marker 0 used by the tracking workflow."
+    }
+  },
+  {
+    "slug": "hall-sensor-system",
+    "title": "Nine Hall Sensor Detection System",
+    "category": "iot-embedded",
+    "categoryLabel": "IoT / Embedded Systems",
+    "year": "2026",
+    "summary": "A nine-point magnetic sensing system with calibration and signal-stabilization logic for reliable detection.",
+    "problem": "Raw magnetic sensor readings fluctuate and can create false triggers without filtering and state logic.",
+    "role": "Developed and tested the embedded calibration, averaging, hysteresis, confirmation, and adaptive-baseline logic.",
+    "technologies": [
+      "ESP32",
+      "Arduino / PlatformIO",
+      "KY-035 Hall Sensors",
+      "C++"
+    ],
+    "outcome": "A structured embedded prototype designed to reduce noise and false triggers. No unverified accuracy figure is presented.",
+    "objectives": [
+      "Read nine sensor channels",
+      "Stabilize noisy signals",
+      "Provide predictable detection states"
+    ],
+    "process": [
+      "Established baselines",
+      "Added filtering and hysteresis",
+      "Introduced confirmation counters and adaptive behavior"
+    ],
+    "lessons": "Good physical-interaction UX often begins with stable, debounced sensor input.",
+    "featured": false,
+    "solution": "The embedded logic combines calibration, rolling averages, hysteresis, confirmation counters, and an adaptive baseline to convert unstable analog readings into predictable detection states.",
+    "gallery": [],
+    "missingImages": [
+      "A top-down photo showing all 9 KY-035 sensor positions.",
+      "A serial-monitor screenshot showing calibrated sensor values and trigger states.",
+      "A short test sequence showing the magnet moving across the sensor grid."
+    ],
+    "github": "https://github.com/lnwtar/backOceanX",
+    "contributions": "Developed and tested the embedded calibration, averaging, hysteresis, confirmation, and adaptive-baseline logic.",
+    "cover": null
+  },
+  {
+    "slug": "onshape-product-modeling",
+    "title": "3D Product Modeling with Onshape",
+    "category": "vr-ar",
+    "categoryLabel": "3D CAD / Product Design",
+    "year": "2025",
+    "summary": "A collection of product-form studies created through parametric sketching, lofts, extrusions, transformations, and part assembly.",
+    "problem": "Physical product concepts need clear proportions, manufacturable geometry, and a documented progression from sketch to assembled form.",
+    "role": "Created the CAD geometry and documented the modeling process through Onshape screenshots.",
+    "technologies": [
+      "Onshape",
+      "3D CAD",
+      "Sketching",
+      "Loft",
+      "Extrude",
+      "Assembly"
+    ],
+    "outcome": "Verified screenshots show a multi-part product stand, a stylus-shaped device, and an assembled scissors model. A perfume-bottle claim is intentionally not made without direct evidence.",
+    "objectives": [
+      "Practice controlled product proportions",
+      "Build multi-part geometry",
+      "Document a repeatable CAD workflow"
+    ],
+    "process": [
+      "Created dimensioned sketches",
+      "Built forms with loft and extrusion tools",
+      "Applied transforms and assembled parts"
+    ],
+    "lessons": "A strong product model communicates both overall silhouette and how individual parts relate.",
+    "gallery": [
+      {
+        "src": "assets/projects/onshape-product-modeling/gallery-01-1600.webp",
+        "srcset": "assets/projects/onshape-product-modeling/gallery-01-960.webp 960w, assets/projects/onshape-product-modeling/gallery-01-1600.webp 1600w",
+        "alt": "Onshape model of a multi-part product stand with stepped and angled geometry.",
+        "caption": "Onshape model of a multi-part product stand with stepped and angled geometry."
+      },
+      {
+        "src": "assets/projects/onshape-product-modeling/gallery-02-1600.webp",
+        "srcset": "assets/projects/onshape-product-modeling/gallery-02-960.webp 960w, assets/projects/onshape-product-modeling/gallery-02-1600.webp 1600w",
+        "alt": "Onshape model of a stylus-shaped handheld device.",
+        "caption": "Onshape model of a stylus-shaped handheld device."
+      },
+      {
+        "src": "assets/projects/onshape-product-modeling/gallery-03-1600.webp",
+        "srcset": "assets/projects/onshape-product-modeling/gallery-03-960.webp 960w, assets/projects/onshape-product-modeling/gallery-03-1600.webp 1600w",
+        "alt": "Onshape scissors assembly showing the completed multi-part form.",
+        "caption": "Onshape scissors assembly showing the completed multi-part form."
+      }
+    ],
+    "featured": true,
+    "solution": "The collection uses dimensioned sketches, extrusions, lofts, part transforms, and assembly relationships to explore product proportions and multi-part construction.",
+    "missingImages": [
+      "If the perfume-bottle model is recovered, add one clean isometric view and one close view of the cap and body transitions."
+    ],
+    "contributions": "Created the CAD geometry and documented the modeling process through Onshape screenshots.",
+    "cover": {
+      "src": "assets/projects/onshape-product-modeling/gallery-01-1600.webp",
+      "srcset": "assets/projects/onshape-product-modeling/gallery-01-960.webp 960w, assets/projects/onshape-product-modeling/gallery-01-1600.webp 1600w",
+      "alt": "Onshape model of a multi-part product stand with stepped and angled geometry.",
+      "caption": "Onshape model of a multi-part product stand with stepped and angled geometry."
+    }
+  }
+]
