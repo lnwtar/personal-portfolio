@@ -62,9 +62,9 @@ for (const viewport of viewports) {
   }
 
   if (viewport.width === 390) {
-    await page.locator('[data-filter="web"]').click();
-    assert.equal(await page.locator('.project-card').count(), 1, 'Web filter should show 1 project');
-    assert.ok(page.url().includes('filter=web'), 'Filter state should be reflected in the URL');
+    await page.locator('[data-filter="uxui"]').click();
+    assert.equal(await page.locator('.project-card').count(), 1, 'UX/UI filter should show 1 project');
+    assert.ok(page.url().includes('filter=uxui'), 'Filter state should be reflected in the URL');
     await page.locator('[data-filter="all"]').click();
   }
 

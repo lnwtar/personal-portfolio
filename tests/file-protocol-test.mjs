@@ -22,8 +22,8 @@ try {
   const detailUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=fashion-ecommerce`;
   await page.goto(detailUrl, { waitUntil: 'load' });
   await page.locator('#detail-title').waitFor({ state: 'visible' });
-  assert.equal((await page.locator('#detail-title').innerText()).trim(), 'Fashion E-commerce Website');
-  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 6');
+  assert.equal((await page.locator('#detail-title').innerText()).trim(), 'Shopping App UX/UI');
+  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 4');
   assert.match(await page.title(), /Kantaphon Thanwisetuaong$/);
 
   console.log('File protocol test passed: 12 projects and project details render offline.');

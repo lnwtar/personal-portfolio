@@ -252,21 +252,22 @@
   },
   {
     "slug": "fashion-ecommerce",
-    "title": "Fashion E-commerce Website",
-    "category": "web",
-    "categoryLabel": "Web Development / UX",
+    "title": "Shopping App UX/UI",
+    "category": "uxui",
+    "categoryLabel": "UX/UI Design / E-commerce",
     "year": "2025",
-    "summary": "An end-to-end fashion shopping experience covering discovery, cart, checkout, accounts, and seller flows.",
-    "problem": "A multi-role store needs consistent navigation and clear state across browsing, purchasing, and account management.",
-    "role": "Designed and implemented the front-end flows and connected them to a Node.js and MySQL application structure.",
+    "summary": "A mobile shopping experience designed in Figma, covering sign in, product discovery, checkout, account tools, and customer chat.",
+    "problem": "A feature-rich marketplace needs clear navigation and consistent visual states across browsing, purchasing, and after-sales communication.",
+    "role": "Designed the information architecture, user flows, interface system, and high-fidelity mobile screens in Figma, then implemented related web flows.",
     "technologies": [
+      "Figma",
+      "UX/UI Design",
+      "Prototyping",
       "HTML5",
       "CSS3",
-      "JavaScript",
-      "Node.js",
-      "MySQL"
+      "JavaScript"
     ],
-    "outcome": "A multi-page project covering product categories, product detail, cart, checkout, authentication, profile, seller, and order-success screens.",
+    "outcome": "A high-fidelity mobile commerce prototype covering the home feed, authentication, product and checkout flows, profiles, seller tools, and customer chat.",
     "objectives": [
       "Create a coherent shopping journey",
       "Support customer and seller tasks",
@@ -274,58 +275,41 @@
     ],
     "process": [
       "Organized the information architecture",
-      "Built reusable visual patterns",
-      "Connected user flows to server and database modules"
+      "Built reusable mobile interface patterns",
+      "Connected the Figma user flows to related web implementation"
     ],
     "lessons": "Consistent product information and visible cart state reduce friction across a long purchase flow.",
     "featured": true,
-    "solution": "The application uses a consistent catalog system, reusable product cards, persistent cart state, and dedicated customer and seller flows across a Node.js and MySQL-backed multi-page store.",
+    "solution": "The interface uses a consistent catalog system, reusable product cards, visible checkout totals, and dedicated customer, seller, and chat flows across one mobile design language.",
     "gallery": [
       {
-        "src": "assets/projects/fashion-ecommerce/gallery-01-1600.webp",
-        "srcset": "assets/projects/fashion-ecommerce/gallery-01-960.webp 960w, assets/projects/fashion-ecommerce/gallery-01-1600.webp 1600w",
-        "alt": "Fashion store landing page with campaign imagery and primary navigation.",
-        "caption": "Fashion store landing page with campaign imagery and primary navigation."
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
+        "alt": "Figma mobile shopping home screen with promotional content, categories, product cards, and bottom navigation.",
+        "caption": "Shopping home feed exported from the original Figma design."
       },
       {
-        "src": "assets/projects/fashion-ecommerce/gallery-02-1600.webp",
-        "srcset": "assets/projects/fashion-ecommerce/gallery-02-960.webp 960w, assets/projects/fashion-ecommerce/gallery-02-1600.webp 1600w",
-        "alt": "Desktop home page showing product discovery and featured content.",
-        "caption": "Desktop home page showing product discovery and featured content."
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-login.png",
+        "alt": "Figma sign-in screen for the Shopping Magic mobile app.",
+        "caption": "Authentication screen exported from the original Figma design."
       },
       {
-        "src": "assets/projects/fashion-ecommerce/gallery-03-1600.webp",
-        "srcset": "assets/projects/fashion-ecommerce/gallery-03-960.webp 960w, assets/projects/fashion-ecommerce/gallery-03-1600.webp 1600w",
-        "alt": "Category listing screen with filters and a responsive product grid.",
-        "caption": "Category listing screen with filters and a responsive product grid."
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-product.png",
+        "alt": "Figma checkout screen showing delivery address, product summary, shipping, total, and payment action.",
+        "caption": "Checkout and payment flow exported from the original Figma design."
       },
       {
-        "src": "assets/projects/fashion-ecommerce/gallery-04-1600.webp",
-        "srcset": "assets/projects/fashion-ecommerce/gallery-04-960.webp 960w, assets/projects/fashion-ecommerce/gallery-04-1600.webp 1600w",
-        "alt": "Product-detail page with imagery, options, price, and purchase action.",
-        "caption": "Product-detail page with imagery, options, price, and purchase action."
-      },
-      {
-        "src": "assets/projects/fashion-ecommerce/gallery-05-1600.webp",
-        "srcset": "assets/projects/fashion-ecommerce/gallery-05-960.webp 960w, assets/projects/fashion-ecommerce/gallery-05-1600.webp 1600w",
-        "alt": "Admin or seller management screen connected to the store workflow.",
-        "caption": "Admin or seller management screen connected to the store workflow."
-      },
-      {
-        "src": "assets/projects/fashion-ecommerce/gallery-06-1600.webp",
-        "srcset": "assets/projects/fashion-ecommerce/gallery-06-960.webp 960w, assets/projects/fashion-ecommerce/gallery-06-1600.webp 1600w",
-        "alt": "Merchandise detail screen showing the product gallery and selection controls.",
-        "caption": "Merchandise detail screen showing the product gallery and selection controls."
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-chat.png",
+        "alt": "Figma customer chat inbox for marketplace stores and order support.",
+        "caption": "Customer and seller chat list exported from the original Figma design."
       }
     ],
     "github": "https://lnwtar.github.io/shopping_Project/",
     "githubLabel": "Live Web Shopping Demo",
-    "contributions": "Designed and implemented the front-end flows and connected them to a Node.js and MySQL application structure.",
+    "contributions": "Designed the mobile UX/UI system and end-to-end flows in Figma, then implemented related front-end shopping experiences.",
     "cover": {
-      "src": "assets/projects/fashion-ecommerce/gallery-01-1600.webp",
-      "srcset": "assets/projects/fashion-ecommerce/gallery-01-960.webp 960w, assets/projects/fashion-ecommerce/gallery-01-1600.webp 1600w",
-      "alt": "Fashion store landing page with campaign imagery and primary navigation.",
-      "caption": "Fashion store landing page with campaign imagery and primary navigation."
+      "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
+      "alt": "Figma mobile shopping home screen with promotional content, categories, product cards, and bottom navigation.",
+      "caption": "Shopping home feed exported from the original Figma design."
     },
     "missingImages": []
   },
