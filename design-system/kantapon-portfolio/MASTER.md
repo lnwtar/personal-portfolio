@@ -1,4 +1,4 @@
-# Kantapon Portfolio Design System
+# Kantaphon Portfolio Design System
 
 ## Direction
 

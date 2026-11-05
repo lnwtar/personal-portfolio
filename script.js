@@ -70,13 +70,18 @@ function setFilter(nextFilter, updateUrl = true) {
 
 async function loadProjects() {
   if (!grid) return;
+  if (Array.isArray(window.PORTFOLIO_PROJECTS)) {
+    state.projects = window.PORTFOLIO_PROJECTS;
+    setFilter(new URLSearchParams(location.search).get('filter') || 'all', false);
+    return;
+  }
   try {
     const response = await fetch('data/projects.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.projects = await response.json();
     setFilter(new URLSearchParams(location.search).get('filter') || 'all', false);
   } catch (error) {
-    grid.innerHTML = '<p class="load-error">Project data could not load. Open this portfolio through a local HTTP server or its deployed website.</p>';
+    grid.innerHTML = '<p class="load-error">Project data could not load. Refresh the page or reopen index.html from the portfolio folder.</p>';
     projectCount.textContent = 'Projects unavailable';
   }
 }

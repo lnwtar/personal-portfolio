@@ -159,14 +159,17 @@ function setupProjectPager(projects, currentIndex) {
 
 async function init() {
   try {
-    const response = await fetch('../data/projects.json');
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const projects = await response.json();
+    let projects = window.PORTFOLIO_PROJECTS;
+    if (!Array.isArray(projects)) {
+      const response = await fetch('../data/projects.json');
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      projects = await response.json();
+    }
     const currentIndex = projects.findIndex(item => item.slug === slug);
     if (currentIndex < 0) throw new Error('Project not found');
     const project = projects[currentIndex];
 
-    document.title = `${project.title} — Kantapon Thanwisetwong`;
+    document.title = `${project.title} — Kantaphon Thanwisetuaong`;
     document.querySelector('meta[name="description"]').content = project.summary;
     $('#detail-category').textContent = project.categoryLabel;
     $('#detail-title').textContent = project.title;

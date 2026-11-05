@@ -1,6 +1,6 @@
 # Personal Resume & Portfolio
 
-A responsive, recruiter-focused portfolio for Kantapon Thanwisetwong. The site is static, dependency-free, and compatible with GitHub Pages project URLs.
+A responsive, recruiter-focused portfolio for Kantaphon Thanwisetuaong. The site is static, dependency-free, and compatible with direct local opening and GitHub Pages project URLs.
 
 ## Features
 
