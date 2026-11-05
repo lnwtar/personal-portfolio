@@ -179,7 +179,7 @@ window.PORTFOLIO_PROJECTS = [
     "category": "iot-embedded",
     "categoryLabel": "Healthcare / Game UX / Sensors",
     "year": "2025–2026",
-    "summary": "A gamified rehabilitation prototype that maps force and range-of-motion data to real-time play feedback.",
+    "summary": "A gamified rehabilitation prototype that maps force and range-of-motion data to a winter boat-runner experience with real-time score feedback.",
     "problem": "Repetitive rehabilitation exercises can be difficult to understand and sustain without immediate, motivating feedback.",
     "role": "Team member contributing to the Unity prototype, sensor-driven interaction, interface feedback, and project documentation.",
     "technologies": [
@@ -189,7 +189,7 @@ window.PORTFOLIO_PROJECTS = [
       "Gyroscope",
       "Sensor Integration"
     ],
-    "outcome": "A functional prototype with a force gauge, angle display, score, repetitions, and an endless-runner interaction for arm or leg exercises.",
+    "outcome": "A functional Unity prototype with a winter boat course, collectible score path, obstacles, and an endless-runner interaction for arm or leg exercises.",
     "objectives": [
       "Visualize exercise effort",
       "Turn movement into game control",
@@ -205,48 +205,31 @@ window.PORTFOLIO_PROJECTS = [
     "solution": "The Unity prototype maps sensor input to a simple runner-style activity while keeping force, angle, repetitions, and score visible as immediate exercise feedback.",
     "gallery": [
       {
-        "src": "assets/projects/smart-rehab/gallery-01-1600.webp",
-        "srcset": "assets/projects/smart-rehab/gallery-01-960.webp 960w, assets/projects/smart-rehab/gallery-01-1600.webp 1600w",
-        "alt": "Unity rehabilitation game prototype with a boat-based movement scene.",
-        "caption": "Unity rehabilitation game prototype with a boat-based movement scene."
+        "src": "assets/projects/smart-rehab/unity-boat-gameplay-score-40.png",
+        "alt": "Unity boat-runner gameplay in a winter river environment with collectible markers and a score of 40.",
+        "caption": "Playable winter boat course with collectible scoring and environmental obstacles."
       },
       {
-        "src": "assets/projects/smart-rehab/gallery-02-1600.webp",
-        "srcset": "assets/projects/smart-rehab/gallery-02-960.webp 960w, assets/projects/smart-rehab/gallery-02-1600.webp 1600w",
-        "alt": "Game view used to test movement feedback and obstacle timing.",
-        "caption": "Game view used to test movement feedback and obstacle timing."
+        "src": "assets/projects/smart-rehab/unity-boat-gameplay-score-16.png",
+        "alt": "Unity boat-runner gameplay showing a clear three-lane collectible path and a score of 16.",
+        "caption": "Gameplay test for steering, collectible placement, and live score feedback."
       },
       {
-        "src": "assets/projects/smart-rehab/gallery-03-1600.webp",
-        "srcset": "assets/projects/smart-rehab/gallery-03-960.webp 960w, assets/projects/smart-rehab/gallery-03-1600.webp 1600w",
-        "alt": "Prototype scene showing the exercise-controlled character and environment.",
-        "caption": "Prototype scene showing the exercise-controlled character and environment."
+        "src": "assets/projects/smart-rehab/unity-winter-course-editor.png",
+        "alt": "Unity Scene view showing the complete winter river course, obstacle arrangement, and collectible routes.",
+        "caption": "Course-building view used to arrange routes, landmarks, obstacles, and collectibles."
       },
       {
-        "src": "assets/projects/smart-rehab/gallery-04-1600.webp",
-        "srcset": "assets/projects/smart-rehab/gallery-04-960.webp 960w, assets/projects/smart-rehab/gallery-04-1600.webp 1600w",
-        "alt": "Unity editor view documenting rehabilitation-game interface iteration.",
-        "caption": "Unity editor view documenting rehabilitation-game interface iteration."
-      },
-      {
-        "src": "assets/projects/smart-rehab/gallery-05-1600.webp",
-        "srcset": "assets/projects/smart-rehab/gallery-05-960.webp 960w, assets/projects/smart-rehab/gallery-05-1600.webp 1600w",
-        "alt": "Gameplay feedback iteration with visual movement cues in the Unity scene.",
-        "caption": "Gameplay feedback iteration with visual movement cues in the Unity scene."
-      },
-      {
-        "src": "assets/projects/smart-rehab/gallery-06-1600.webp",
-        "srcset": "assets/projects/smart-rehab/gallery-06-960.webp 960w, assets/projects/smart-rehab/gallery-06-1600.webp 1600w",
-        "alt": "Later prototype screen showing updated environment and feedback elements.",
-        "caption": "Later prototype screen showing updated environment and feedback elements."
+        "src": "assets/projects/smart-rehab/unity-winter-obstacle-layout.png",
+        "alt": "Unity editor view showing a dense winter obstacle section with bridges, wooden structures, and collectible markers.",
+        "caption": "Detailed obstacle-layout iteration inside the Unity editor."
       }
     ],
     "contributions": "Team member contributing to the Unity prototype, sensor-driven interaction, interface feedback, and project documentation.",
     "cover": {
-      "src": "assets/projects/smart-rehab/gallery-01-1600.webp",
-      "srcset": "assets/projects/smart-rehab/gallery-01-960.webp 960w, assets/projects/smart-rehab/gallery-01-1600.webp 1600w",
-      "alt": "Unity rehabilitation game prototype with a boat-based movement scene.",
-      "caption": "Unity rehabilitation game prototype with a boat-based movement scene."
+      "src": "assets/projects/smart-rehab/unity-boat-gameplay-score-40.png",
+      "alt": "Unity boat-runner gameplay in a winter river environment with collectible markers and a score of 40.",
+      "caption": "Playable winter boat course with collectible scoring and environmental obstacles."
     },
     "missingImages": []
   },

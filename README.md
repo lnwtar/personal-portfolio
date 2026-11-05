@@ -30,7 +30,7 @@ personal-portfolio/
 ├── projects/project-detail.js
 ├── assets/images/
 ├── assets/projects/<project-slug>/
-├── assets/resume.pdf
+├── assets/resume.pdf          # Legacy local copy; public buttons use Canva
 ├── tests/validate.mjs
 ├── tests/visual-test.mjs
 ├── robots.txt
@@ -65,7 +65,7 @@ node tests/visual-test.mjs
 - Project content: `data/projects.json`
 - Project design and interactions: `style.css` and `script.js`
 - Portrait: replace `assets/images/profile.png` while keeping the same filename
-- Resume: replace `assets/resume.pdf` while keeping the same filename
+- Resume: update the Canva URL used in `index.html` and `projects/project.html`
 
 ## Adding a project
 

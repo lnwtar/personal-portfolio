@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..');
-const required = ['index.html','style.css','script.js','data/projects.json','data/projects.js','projects/project.html','projects/project-detail.js','assets/resume.pdf','assets/images/profile.png'];
+const required = ['index.html','style.css','script.js','data/projects.json','data/projects.js','projects/project.html','projects/project-detail.js','assets/images/profile.png'];
 let failed = false;
 for (const file of required) {
   const target = path.join(root,file);
