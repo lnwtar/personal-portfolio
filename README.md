@@ -8,9 +8,9 @@ A responsive, recruiter-focused portfolio for Kantaphon Thanwisetuaong. The site
 - Accessible sticky navigation and mobile menu
 - Data-driven project gallery with URL-synced category filters
 - Reusable case-study page with thumbnail gallery, previous/next controls, captions, fullscreen lightbox, keyboard support, and touch swipe
-- 56 verified local project images across 10 projects, optimized to WebP at 960 px and 1600 px
+- 59 verified local project images across 10 gallery-backed projects
 - Clearly labelled image-request placeholders where project evidence is still missing
-- Downloadable PDF resume
+- Public Canva resume link
 - Keyboard focus styles and reduced-motion support
 - Graceful handling for missing project links and images
 
@@ -39,10 +39,10 @@ personal-portfolio/
 
 ## Local development
 
-Opening the HTML through `file://` cannot load JSON. Start a local server from this directory:
+The site also supports direct `file://` opening. For local HTTP development, start the included server from this directory:
 
 ```powershell
-python -m http.server 4173
+node tests/server.mjs
 ```
 
 Then open `http://127.0.0.1:4173/`.

@@ -15,9 +15,9 @@ try {
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
   await page.goto(pathToFileURL(path.join(root, 'index.html')).href, { waitUntil: 'load' });
   await page.locator('.project-card').first().waitFor({ state: 'visible' });
-  assert.equal(await page.locator('.project-card').count(), 12, 'All projects should render through file://');
+  assert.equal(await page.locator('.project-card').count(), 11, 'All projects should render through file://');
   assert.match(await page.locator('h1').innerText(), /Kantaphon\s+Thanwisetuaong\./);
-  assert.equal((await page.locator('#project-count').innerText()).trim(), '12 projects');
+  assert.equal((await page.locator('#project-count').innerText()).trim(), '11 projects');
   assert.equal(
     await page.locator('a[href="https://canva.link/dc9a3ov0nlx5l56"]').count(),
     3,
@@ -27,8 +27,8 @@ try {
   const detailUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=fashion-ecommerce`;
   await page.goto(detailUrl, { waitUntil: 'load' });
   await page.locator('#detail-title').waitFor({ state: 'visible' });
-  assert.equal((await page.locator('#detail-title').innerText()).trim(), 'Shopping App UX/UI');
-  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 4');
+  assert.equal((await page.locator('#detail-title').innerText()).trim(), 'AI Fashion Shopping & Outfit Matching');
+  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 5');
   assert.match(await page.title(), /Kantaphon Thanwisetuaong$/);
 
   const rehabUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=smart-rehab`;
@@ -45,7 +45,7 @@ try {
     'Project resume action should use the approved Canva link',
   );
 
-  console.log('File protocol test passed: 12 projects and project details render offline.');
+  console.log('File protocol test passed: 11 projects and project details render offline.');
 } finally {
   await browser.close();
 }

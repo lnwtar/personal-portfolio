@@ -93,15 +93,6 @@ UPDATES = {
             "CountBall test scene documenting the packaged game workflow.",
         ]),
     },
-    "bathub-whale-ar": {
-        "solution": "The Unity and Vuforia build organizes image targets into separate scenes and pairs them with lightweight rotation, lighting, and menu controls for mobile use.",
-        "gallery": [],
-        "missingImages": [
-            "A phone screenshot showing the whale model anchored to its image target.",
-            "The BATHUB WHALE main menu and target-selection flow.",
-            "A close view of the rotation and lighting controls in use.",
-        ],
-    },
     "seizure-mission-roblox": {
         "solution": "A mission-based Roblox experience places guidance inside a familiar school scenario, using NPC dialogue, decision screens, environmental cues, and feedback to reinforce seizure-response knowledge.",
         "gallery": gallery("seizure-mission-roblox", [

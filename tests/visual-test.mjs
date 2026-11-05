@@ -50,7 +50,7 @@ for (const viewport of viewports) {
 
   await page.goto(`${baseUrl}/index.html`, { waitUntil: 'networkidle' });
   await page.locator('.project-card').first().waitFor();
-  assert.equal(await page.locator('.project-card').count(), 12, `${viewport.width}px should render 12 projects`);
+  assert.equal(await page.locator('.project-card').count(), 11, `${viewport.width}px should render 11 projects`);
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.ok(overflow <= 1, `${viewport.width}px home page overflows by ${overflow}px`);
 
@@ -92,13 +92,13 @@ detail.on('console', message => { if (message.type() === 'error') detailErrors.p
 detail.on('pageerror', error => detailErrors.push(error.message));
 await detail.goto(`${baseUrl}/projects/project.html?slug=v-resq`, { waitUntil: 'networkidle' });
 await detail.locator('#gallery-viewer:not([hidden])').waitFor();
-assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '1 / 9');
+assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '1 / 15');
 await detail.locator('#gallery-next').click();
-assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '2 / 9');
+assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '2 / 15');
 await detail.locator('#gallery-open').click();
 assert.ok(await detail.locator('#lightbox').evaluate(dialog => dialog.open), 'Lightbox should open');
 await detail.keyboard.press('ArrowRight');
-assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '3 / 9');
+assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '3 / 15');
 await detail.keyboard.press('Escape');
 assert.ok(!(await detail.locator('#lightbox').evaluate(dialog => dialog.open)), 'Escape should close lightbox');
 assert.ok(await detail.locator('#gallery-open').evaluate(element => element === document.activeElement), 'Focus should return to gallery opener');
@@ -108,7 +108,7 @@ await detail.locator('#lightbox-stage').evaluate(element => {
   element.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, clientX: 320, clientY: 160, pointerType: 'touch' }));
   element.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, clientX: 120, clientY: 160, pointerType: 'touch' }));
 });
-assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '4 / 9', 'Swipe should advance the gallery');
+assert.equal((await detail.locator('#gallery-counter').textContent()).trim(), '4 / 15', 'Swipe should advance the gallery');
 await detail.keyboard.press('Escape');
 
 const detailOverflow = await detail.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);

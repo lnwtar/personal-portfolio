@@ -1,13 +1,13 @@
 window.PORTFOLIO_PROJECTS = [
   {
     "slug": "v-resq",
-    "title": "V-ResQ — VR Rescue Robot Control System",
+    "title": "V-ResQ — Rescue Robot Control System",
     "category": "vr-ar",
     "categoryLabel": "VR / Robotics / Research",
     "year": "2026",
-    "summary": "A research-oriented VR interface for remotely controlling a rescue robot through a distributed architecture.",
-    "problem": "Rescue operators need a clear, responsive way to control a robot and understand its state while remaining outside hazardous environments.",
-    "role": "Team member contributing to prototype development, system integration, testing plans, and technical documentation.",
+    "summary": "A rescue-robot system that lets an operator drive the robot, watch its camera, and check sensor data from one clear dashboard.",
+    "problem": "Rescue teams may need to inspect places that are dangerous or difficult for people to enter. They need a simple way to see what the robot sees and understand its status from a safe location.",
+    "role": "Helped build the robot-control dashboard, connect it to the camera and sensors, test communication, and document the prototype.",
     "technologies": [
       "Unity",
       "C#",
@@ -16,20 +16,20 @@ window.PORTFOLIO_PROJECTS = [
       "ESP32-S3",
       "UDP"
     ],
-    "outcome": "A functional research prototype and documented test plan covering communication, control stability, safety behavior, and participant considerations. Performance results are not claimed here.",
+    "outcome": "A working prototype that can show live video and sensor data, control robot movement, display a local map, and report connection or hardware problems.",
     "objectives": [
-      "Create an immersive robot-control interface",
-      "Return live sensor feedback to the operator",
-      "Design safe fallback behavior when communication is interrupted"
+      "Control the robot from one screen",
+      "Show the camera and sensor information clearly",
+      "Warn the operator when the connection or hardware has a problem"
     ],
     "process": [
-      "Mapped the distributed control architecture",
-      "Integrated VR input, edge processing, and embedded motor control",
-      "Prepared safety and user-study documentation"
+      "Connected the robot, camera, and sensors",
+      "Designed a dashboard for movement and live status",
+      "Tested communication and added diagnostic views"
     ],
-    "lessons": "Safety feedback and system status are central UX requirements when an interface controls physical hardware.",
+    "lessons": "For emergency tools, clear status messages and simple controls are more useful than technical detail alone.",
     "featured": true,
-    "solution": "The prototype combines a VR operator interface, distributed robot-control services, live telemetry, and explicit safety states so an operator can understand and control the remote system from one workflow.",
+    "solution": "The operator opens one dashboard to move the robot, view the live camera, see nearby obstacles, and check whether each sensor and connection is working.",
     "gallery": [
       {
         "src": "assets/projects/v-resq/gallery-01-1600.webp",
@@ -84,14 +84,43 @@ window.PORTFOLIO_PROJECTS = [
         "srcset": "assets/projects/v-resq/gallery-09-960.webp 960w, assets/projects/v-resq/gallery-09-1600.webp 1600w",
         "alt": "Telemetry-focused console view from the later prototype iteration.",
         "caption": "Telemetry-focused console view from the later prototype iteration."
+      },
+      {
+        "src": "assets/projects/v-resq/robot-operations-console.png",
+        "alt": "V-ResQ robot operations dashboard with driving controls, live camera, sensor readings, and smart-assist status.",
+        "caption": "One screen brings together robot driving, live video, sensor data, obstacle distance, and smart-assist status."
+      },
+      {
+        "src": "assets/projects/v-resq/robot-local-map-telemetry.png",
+        "alt": "V-ResQ local map and telemetry panels showing robot position and live system data.",
+        "caption": "The local map shows the robot position while the telemetry panel reports live system data."
+      },
+      {
+        "src": "assets/projects/v-resq/protocol-monitor.png",
+        "alt": "V-ResQ protocol monitor showing connection health, frame integrity, and robot subsystem status.",
+        "caption": "The protocol monitor checks whether the robot connection and its data are working correctly."
+      },
+      {
+        "src": "assets/projects/v-resq/robot-diagnostics.png",
+        "alt": "V-ResQ diagnostics dashboard showing command health, camera status, operator notes, and raw data.",
+        "caption": "A diagnostics view helps the team find connection, camera, and command problems."
+      },
+      {
+        "src": "assets/projects/v-resq/node-inspector.png",
+        "alt": "V-ResQ node inspector with robot identity, sensor telemetry, and raw JSON data.",
+        "caption": "The node inspector summarizes the selected robot, its sensors, and the data it sends."
+      },
+      {
+        "src": "assets/projects/v-resq/oled-hardware-status.png",
+        "alt": "OLED screens on the V-ResQ robot showing network identity and connection status.",
+        "caption": "OLED hardware screens confirm the robot's network identity and connection state directly on the device."
       }
     ],
-    "contributions": "Team member contributing to prototype development, system integration, testing plans, and technical documentation.",
+    "contributions": "Helped develop the control dashboard, integrate robot data, test the camera and sensor communication, and prepare technical documentation.",
     "cover": {
-      "src": "assets/projects/v-resq/gallery-01-1600.webp",
-      "srcset": "assets/projects/v-resq/gallery-01-960.webp 960w, assets/projects/v-resq/gallery-01-1600.webp 1600w",
-      "alt": "V-ResQ research presentation showing the project concept and system context.",
-      "caption": "V-ResQ research presentation showing the project concept and system context."
+      "src": "assets/projects/v-resq/robot-operations-console.png",
+      "alt": "V-ResQ robot operations dashboard with driving controls, live camera, sensor readings, and smart-assist status.",
+      "caption": "One screen brings together robot driving, live video, sensor data, obstacle distance, and smart-assist status."
     },
     "missingImages": []
   },
@@ -235,35 +264,36 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     "slug": "fashion-ecommerce",
-    "title": "Shopping App UX/UI",
+    "title": "AI Fashion Shopping & Outfit Matching",
     "category": "uxui",
-    "categoryLabel": "UX/UI Design / E-commerce",
+    "categoryLabel": "UX/UI Design / AI Fashion",
     "year": "2025",
-    "summary": "A mobile shopping experience designed in Figma, covering sign in, product discovery, checkout, account tools, and customer chat.",
-    "problem": "A feature-rich marketplace needs clear navigation and consistent visual states across browsing, purchasing, and after-sales communication.",
-    "role": "Designed the information architecture, user flows, interface system, and high-fidelity mobile screens in Figma, then implemented related web flows.",
+    "summary": "A Figma-designed shopping app that uses AI to help users choose clothes, match outfits, and shop with more confidence.",
+    "problem": "Online shoppers can find individual products but may be unsure which clothes work well together or suit the look they want.",
+    "role": "Designed the information architecture, shopping flows, AI outfit-matching experience, and high-fidelity mobile screens in Figma, then implemented related web flows.",
     "technologies": [
       "Figma",
       "UX/UI Design",
+      "AI Styling Concept",
       "Prototyping",
       "HTML5",
       "CSS3",
       "JavaScript"
     ],
-    "outcome": "A high-fidelity mobile commerce prototype covering the home feed, authentication, product and checkout flows, profiles, seller tools, and customer chat.",
+    "outcome": "A high-fidelity mobile prototype covering product discovery, AI-assisted outfit matching, checkout, profiles, seller tools, and customer chat.",
     "objectives": [
-      "Create a coherent shopping journey",
-      "Support customer and seller tasks",
-      "Keep product and checkout information readable"
+      "Help users discover clothing",
+      "Suggest products that work together as an outfit",
+      "Keep shopping, checkout, and chat simple"
     ],
     "process": [
-      "Organized the information architecture",
-      "Built reusable mobile interface patterns",
-      "Connected the Figma user flows to related web implementation"
+      "Mapped the shopping and styling journeys",
+      "Designed AI outfit suggestions and reusable mobile patterns",
+      "Connected the Figma flows to a related web demo"
     ],
-    "lessons": "Consistent product information and visible cart state reduce friction across a long purchase flow.",
+    "lessons": "AI suggestions are most useful when the reason for a match is clear and the user still makes the final choice.",
     "featured": true,
-    "solution": "The interface uses a consistent catalog system, reusable product cards, visible checkout totals, and dedicated customer, seller, and chat flows across one mobile design language.",
+    "solution": "The app combines a product catalog with AI-assisted styling, helping users compare clothing, build matching outfits, and complete purchases in one mobile flow.",
     "gallery": [
       {
         "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
@@ -284,11 +314,16 @@ window.PORTFOLIO_PROJECTS = [
         "src": "assets/projects/fashion-ecommerce/figma-shopping-chat.png",
         "alt": "Figma customer chat inbox for marketplace stores and order support.",
         "caption": "Customer and seller chat list exported from the original Figma design."
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-ai-workspace.png",
+        "alt": "Full Figma workspace showing the AI fashion shopping app, outfit matching screens, commerce flows, and design iterations.",
+        "caption": "Full Figma workspace showing the breadth of shopping, AI styling, seller, and support flows."
       }
     ],
     "github": "https://lnwtar.github.io/shopping_Project/",
     "githubLabel": "Live Web Shopping Demo",
-    "contributions": "Designed the mobile UX/UI system and end-to-end flows in Figma, then implemented related front-end shopping experiences.",
+    "contributions": "Designed the mobile UX/UI system, AI-assisted outfit-matching concept, and end-to-end shopping flows in Figma, then implemented related front-end experiences.",
     "cover": {
       "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
       "alt": "Figma mobile shopping home screen with promotional content, categories, product cards, and bottom navigation.",
@@ -445,45 +480,6 @@ window.PORTFOLIO_PROJECTS = [
       "caption": "Unity editor view documenting the ball-spawning gameplay prototype."
     },
     "missingImages": []
-  },
-  {
-    "slug": "bathub-whale-ar",
-    "title": "BATHUB WHALE AR",
-    "category": "vr-ar",
-    "categoryLabel": "Augmented Reality / 3D",
-    "year": "2025",
-    "summary": "An image-target AR experience with interactive 3D objects, rotation controls, lighting adjustments, and a mobile menu.",
-    "problem": "AR content needs discoverable controls and stable presentation around physical image targets.",
-    "role": "Developed the Unity scenes, image-target setup, menu flow, object rotation, and lighting controls.",
-    "technologies": [
-      "Unity",
-      "C#",
-      "Vuforia",
-      "Image Targets",
-      "3D Assets"
-    ],
-    "outcome": "A multi-target AR prototype with a titled main menu and interactive object controls.",
-    "objectives": [
-      "Recognize multiple image targets",
-      "Expose simple 3D controls",
-      "Keep the mobile interaction lightweight"
-    ],
-    "process": [
-      "Configured target scenes",
-      "Implemented rotation and lighting scripts",
-      "Connected the menu and AR scene"
-    ],
-    "lessons": "AR controls must remain visible without competing with the physical-world content.",
-    "featured": false,
-    "solution": "The Unity and Vuforia build organizes image targets into separate scenes and pairs them with lightweight rotation, lighting, and menu controls for mobile use.",
-    "gallery": [],
-    "missingImages": [
-      "A phone screenshot showing the whale model anchored to its image target.",
-      "The BATHUB WHALE main menu and target-selection flow.",
-      "A close view of the rotation and lighting controls in use."
-    ],
-    "contributions": "Developed the Unity scenes, image-target setup, menu flow, object rotation, and lighting controls.",
-    "cover": null
   },
   {
     "slug": "seizure-mission-roblox",
