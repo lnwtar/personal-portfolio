@@ -34,8 +34,10 @@ try {
     'The Figma shopping card should use the approved phone mockup cover',
   );
   await page.locator('.filter[data-filter="web"]').click();
-  assert.equal(await page.locator('.project-card').count(), 3, 'Web filter should show the three projects with web interfaces');
-  assert.equal((await page.locator('#project-count').innerText()).trim(), '3 projects');
+  assert.equal(await page.locator('.project-card').count(), 4, 'Web filter should show the four projects with web interfaces');
+  assert.equal((await page.locator('#project-count').innerText()).trim(), '4 projects');
+  assert.equal(await page.getByRole('heading', { name: 'Web Shopping Platform' }).count(), 1);
+  assert.equal(await page.getByRole('heading', { name: 'Nine Hall Sensor Detection System' }).count(), 0);
   await page.locator('.filter[data-filter="all"]').click();
   assert.equal(await page.getByRole('link', { name: /resume/i }).count(), 0, 'Homepage should not show resume actions');
   assert.equal(await page.locator('a[href*="canva.link"]').count(), 0, 'Homepage should not retain the previous resume URL');
@@ -48,6 +50,13 @@ try {
   assert.match(await page.locator('#gallery-active').getAttribute('src'), /figma-shopping-login\.png$/);
   assert.equal(await page.locator('#gallery-open').evaluate(element => element.classList.contains('is-portrait')), true);
   assert.match(await page.title(), /Kantaphon Thanwisetuaong$/);
+
+  const webShoppingUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=web-shopping-platform`;
+  await page.goto(webShoppingUrl, { waitUntil: 'load' });
+  await page.locator('#detail-title').waitFor({ state: 'visible' });
+  assert.equal((await page.locator('#detail-title').innerText()).trim(), 'Web Shopping Platform');
+  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 3');
+  assert.equal(await page.locator('.detail-github').getAttribute('href'), 'https://lnwtar.github.io/shopping_Project/');
 
   const rehabUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=smart-rehab`;
   await page.goto(rehabUrl, { waitUntil: 'load' });

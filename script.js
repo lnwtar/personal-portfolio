@@ -8,7 +8,7 @@ const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('#nav-menu');
 const backTop = document.querySelector('.back-top');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const projectPriority = ['fashion-ecommerce', 'v-resq', 'badminton-pose-analysis'];
+const projectPriority = ['fashion-ecommerce', 'web-shopping-platform', 'v-resq', 'badminton-pose-analysis'];
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;'

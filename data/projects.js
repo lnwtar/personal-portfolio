@@ -331,6 +331,65 @@ window.PORTFOLIO_PROJECTS = [
     "missingImages": []
   },
   {
+    "slug": "web-shopping-platform",
+    "title": "Web Shopping Platform",
+    "category": "web",
+    "filters": ["web"],
+    "categoryLabel": "Full-Stack Web Development",
+    "year": "2025",
+    "summary": "A responsive e-commerce website built with HTML, CSS, and JavaScript, supported by a Node.js, Express, and MySQL application for account, cart, order, and seller workflows.",
+    "problem": "A shopping experience needs to connect product discovery, account access, cart management, checkout, order history, and seller tools without making the flow difficult to follow.",
+    "role": "Developed the storefront pages and interaction logic, then connected authentication, cart, order, and seller routes to the Express and MySQL backend.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MySQL"
+    ],
+    "outcome": "A multi-page shopping prototype with product catalogs, sale pages, login and registration, cart and checkout flows, order history, and seller product tools. The public demo supports browsing; backend-dependent actions require the local Node.js and MySQL server.",
+    "objectives": [
+      "Build a clear multi-page storefront with HTML and CSS",
+      "Manage cart and checkout interactions with JavaScript",
+      "Connect customer and seller workflows through reusable API routes"
+    ],
+    "process": [
+      "Structured the catalog, sale, account, cart, and checkout pages",
+      "Implemented browser-side state and API requests",
+      "Built Express routes for authentication, carts, orders, and seller tools"
+    ],
+    "lessons": "A public static demo should clearly separate interactions that work in the browser from actions that require the application server and database.",
+    "featured": true,
+    "solution": "The project combines a responsive storefront with JavaScript-driven shopping flows and an Express/MySQL backend for authentication, cart data, orders, and seller operations.",
+    "gallery": [
+      {
+        "src": "assets/projects/web-shopping/web-shopping-home.png",
+        "alt": "Web Shopping product catalog showing a New Arrival grid with clothing and merchandise.",
+        "caption": "Responsive catalog and product-discovery page built with HTML and CSS."
+      },
+      {
+        "src": "assets/projects/web-shopping/web-shopping-sale.png",
+        "alt": "Web Shopping sale page with navigation, discounted products, and original prices.",
+        "caption": "Sale listing with reusable product presentation and navigation."
+      },
+      {
+        "src": "assets/projects/web-shopping/web-shopping-checkout.png",
+        "alt": "Web Shopping checkout page with shipping address, order summary, and payment sections.",
+        "caption": "Checkout UI for shipping, order totals, and payment selection."
+      }
+    ],
+    "github": "https://lnwtar.github.io/shopping_Project/",
+    "githubLabel": "Open Live Web Demo",
+    "contributions": "Developed the HTML/CSS storefront, JavaScript interactions, and the Node.js, Express, and MySQL application structure for customer and seller workflows.",
+    "cover": {
+      "src": "assets/projects/web-shopping/web-shopping-home.png",
+      "alt": "Web Shopping product catalog showing a New Arrival grid with clothing and merchandise.",
+      "caption": "Responsive catalog and product-discovery page built with HTML and CSS."
+    },
+    "missingImages": []
+  },
+  {
     "slug": "vr-hospital",
     "title": "VR Hospital & Dental Clinic Simulation",
     "category": "vr-ar",
@@ -688,45 +747,6 @@ window.PORTFOLIO_PROJECTS = [
       "alt": "Generated ArUco marker 0 used by the tracking workflow.",
       "caption": "Generated ArUco marker 0 used by the tracking workflow."
     }
-  },
-  {
-    "slug": "hall-sensor-system",
-    "title": "Nine Hall Sensor Detection System",
-    "category": "iot-embedded",
-    "categoryLabel": "IoT / Embedded Systems",
-    "year": "2026",
-    "summary": "A nine-point magnetic sensing system with calibration and signal-stabilization logic for reliable detection.",
-    "problem": "Raw magnetic sensor readings fluctuate and can create false triggers without filtering and state logic.",
-    "role": "Developed and tested the embedded calibration, averaging, hysteresis, confirmation, and adaptive-baseline logic.",
-    "technologies": [
-      "ESP32",
-      "Arduino / PlatformIO",
-      "KY-035 Hall Sensors",
-      "C++"
-    ],
-    "outcome": "A structured embedded prototype designed to reduce noise and false triggers. No unverified accuracy figure is presented.",
-    "objectives": [
-      "Read nine sensor channels",
-      "Stabilize noisy signals",
-      "Provide predictable detection states"
-    ],
-    "process": [
-      "Established baselines",
-      "Added filtering and hysteresis",
-      "Introduced confirmation counters and adaptive behavior"
-    ],
-    "lessons": "Good physical-interaction UX often begins with stable, debounced sensor input.",
-    "featured": false,
-    "solution": "The embedded logic combines calibration, rolling averages, hysteresis, confirmation counters, and an adaptive baseline to convert unstable analog readings into predictable detection states.",
-    "gallery": [],
-    "missingImages": [
-      "A top-down photo showing all 9 KY-035 sensor positions.",
-      "A serial-monitor screenshot showing calibrated sensor values and trigger states.",
-      "A short test sequence showing the magnet moving across the sensor grid."
-    ],
-    "github": "https://github.com/lnwtar/backOceanX",
-    "contributions": "Developed and tested the embedded calibration, averaging, hysteresis, confirmation, and adaptive-baseline logic.",
-    "cover": null
   },
   {
     "slug": "onshape-product-modeling",

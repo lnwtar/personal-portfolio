@@ -51,6 +51,8 @@ for (const viewport of viewports) {
   await page.goto(`${baseUrl}/index.html`, { waitUntil: 'networkidle' });
   await page.locator('.project-card').first().waitFor();
   assert.equal(await page.locator('.project-card').count(), 11, `${viewport.width}px should render 11 projects`);
+  assert.equal(await page.getByRole('heading', { name: 'Web Shopping Platform' }).count(), 1, `${viewport.width}px should include the Web Shopping project`);
+  assert.equal(await page.getByRole('heading', { name: 'Nine Hall Sensor Detection System' }).count(), 0, `${viewport.width}px should not include the removed Hall Sensor project`);
   assert.ok(
     await page.locator('.hero-copy h1').evaluate(element => element.scrollWidth <= element.clientWidth + 1),
     `${viewport.width}px hero heading should not split or overflow the name`,
@@ -95,8 +97,10 @@ for (const viewport of viewports) {
     await page.locator('#gallery-viewer:not([hidden])').waitFor();
     await page.waitForFunction(() => {
       const image = document.querySelector('#gallery-active');
-      return image?.complete && image.naturalWidth > 0;
+      return image?.src.endsWith('/figma-shopping-login.png') && image.complete && image.naturalWidth > 0;
     });
+    await page.locator('#gallery-active').evaluate(image => image.decode());
+    await page.waitForTimeout(300);
     assert.equal((await page.locator('#gallery-counter').textContent()).trim(), '1 / 9');
     assert.ok(await page.locator('#gallery-open').evaluate(element => element.classList.contains('is-portrait')));
     const imageRatios = await page.locator('#gallery-active').evaluate(image => ({
