@@ -281,6 +281,11 @@ window.PORTFOLIO_PROJECTS = [
         "orientation": "portrait"
       },
       {
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-main-canvas.png",
+        "alt": "Figma canvas showing the main shopping home screen with search, fashion campaign imagery, and category shortcuts.",
+        "caption": "Main shopping screen shown on the original Figma canvas."
+      },
+      {
         "src": "assets/projects/fashion-ecommerce/figma-shopping-notifications.png",
         "alt": "Figma shopping notification center showing promotions, live updates, and order activity.",
         "caption": "Notification center for promotions, content updates, and order activity.",

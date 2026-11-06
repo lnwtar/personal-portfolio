@@ -27,17 +27,14 @@ try {
   assert.equal(await page.locator('.project-card').count(), 3, 'Web filter should show the three projects with web interfaces');
   assert.equal((await page.locator('#project-count').innerText()).trim(), '3 projects');
   await page.locator('.filter[data-filter="all"]').click();
-  assert.equal(
-    await page.locator('a[href="https://canva.link/dc9a3ov0nlx5l56"]').count(),
-    3,
-    'All homepage resume actions should use the approved Canva link',
-  );
+  assert.equal(await page.getByRole('link', { name: /resume/i }).count(), 0, 'Homepage should not show resume actions');
+  assert.equal(await page.locator('a[href*="canva.link"]').count(), 0, 'Homepage should not retain the previous resume URL');
 
   const detailUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=fashion-ecommerce`;
   await page.goto(detailUrl, { waitUntil: 'load' });
   await page.locator('#detail-title').waitFor({ state: 'visible' });
   assert.equal((await page.locator('#detail-title').innerText()).trim(), 'AI Fashion Shopping & Outfit Matching');
-  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 8');
+  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 9');
   assert.match(await page.locator('#gallery-active').getAttribute('src'), /figma-shopping-login\.png$/);
   assert.equal(await page.locator('#gallery-open').evaluate(element => element.classList.contains('is-portrait')), true);
   assert.match(await page.title(), /Kantaphon Thanwisetuaong$/);
@@ -50,11 +47,8 @@ try {
     await page.locator('#gallery-active').getAttribute('src'),
     /unity-boat-gameplay-score-40\.png$/,
   );
-  assert.equal(
-    await page.locator('a[href="https://canva.link/dc9a3ov0nlx5l56"]').count(),
-    1,
-    'Project resume action should use the approved Canva link',
-  );
+  assert.equal(await page.getByRole('link', { name: /resume/i }).count(), 0, 'Project pages should not show a resume action');
+  assert.equal(await page.locator('a[href*="canva.link"]').count(), 0, 'Project pages should not retain the previous resume URL');
 
   console.log('File protocol test passed: 11 projects and project details render offline.');
 } finally {
