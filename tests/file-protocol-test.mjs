@@ -25,14 +25,15 @@ try {
   assert.equal((await page.locator('#project-count').innerText()).trim(), '11 projects');
   assert.equal(
     (await page.locator('.project-card h3').first().innerText()).trim(),
-    'AI Fashion Shopping & Outfit Matching',
-    'Web-relevant interface work should lead the project grid',
+    'Web Shopping Platform',
+    'The implemented Web Shopping project should lead the project grid',
   );
   assert.match(
     await page.locator('.project-card').first().locator('.project-visual img').getAttribute('src'),
-    /figma-shopping-cover\.png$/,
-    'The Figma shopping card should use the approved phone mockup cover',
+    /web-shopping-home\.png$/,
+    'The featured Web Shopping card should use the live catalog cover',
   );
+  assert.equal((await page.locator('.project-card h3').nth(1).innerText()).trim(), 'V-ResQ — Rescue Robot Control System');
   await page.locator('.filter[data-filter="web"]').click();
   assert.equal(await page.locator('.project-card').count(), 4, 'Web filter should show the four projects with web interfaces');
   assert.equal((await page.locator('#project-count').innerText()).trim(), '4 projects');

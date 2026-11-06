@@ -59,6 +59,8 @@ for (const viewport of viewports) {
   );
   const featuredCard = page.locator('.project-card--featured');
   assert.equal(await featuredCard.count(), 1, `${viewport.width}px should have one clear featured project`);
+  assert.equal((await featuredCard.locator('h3').innerText()).trim(), 'Web Shopping Platform');
+  assert.equal((await page.locator('.project-card h3').nth(1).innerText()).trim(), 'V-ResQ — Rescue Robot Control System');
   if (viewport.width >= 821) {
     const featuredBody = await featuredCard.locator('.project-body').boundingBox();
     assert.ok(featuredBody?.width >= 220, `${viewport.width}px featured project copy should remain visible beside its image`);
