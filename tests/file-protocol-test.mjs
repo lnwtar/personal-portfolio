@@ -23,6 +23,11 @@ try {
     'AI Fashion Shopping & Outfit Matching',
     'Web-relevant interface work should lead the project grid',
   );
+  assert.match(
+    await page.locator('.project-card').first().locator('.project-visual img').getAttribute('src'),
+    /figma-shopping-cover\.png$/,
+    'The Figma shopping card should use the approved phone mockup cover',
+  );
   await page.locator('.filter[data-filter="web"]').click();
   assert.equal(await page.locator('.project-card').count(), 3, 'Web filter should show the three projects with web interfaces');
   assert.equal((await page.locator('#project-count').innerText()).trim(), '3 projects');

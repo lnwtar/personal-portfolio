@@ -324,9 +324,9 @@
     "githubLabel": "Live Web Shopping Demo",
     "contributions": "Designed the mobile UX/UI system, AI-assisted outfit-matching concept, and end-to-end shopping flows in Figma, then implemented related front-end experiences.",
     "cover": {
-      "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
-      "alt": "Figma mobile shopping home screen with promotional content, categories, product cards, and bottom navigation.",
-      "caption": "Shopping home feed exported from the original Figma design."
+      "src": "assets/projects/fashion-ecommerce/figma-shopping-cover.png",
+      "alt": "Shopping app home screen presented inside a phone mockup on a black background.",
+      "caption": "Shopping home screen presented as the project cover."
     },
     "missingImages": []
   },

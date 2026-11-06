@@ -158,8 +158,6 @@ h1, h2, h3, section[id] { scroll-margin-top: calc(var(--header) + 24px); }
 .project-visual { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 1px solid var(--line); border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0; background: var(--surface-strong); }
 .project-visual img { width: 100%; height: 100%; object-fit: contain; background: var(--surface-strong); transition: transform 260ms ease; }
 .project-card:hover .project-visual img { transform: scale(1.015); }
-.project-card[data-project="fashion-ecommerce"] .project-visual { background: #0c1117; }
-.project-card[data-project="fashion-ecommerce"] .project-visual img { width: auto; max-width: 82%; height: auto; max-height: 88%; background: transparent; }
 .project-placeholder { width: 100%; height: 100%; min-height: 180px; display: grid; place-items: center; align-content: center; gap: 6px; padding: 24px; text-align: center; background: var(--surface-strong); color: var(--muted); }
 .project-placeholder > span { color: var(--accent); font: 800 clamp(1.5rem, 4vw, 2.6rem)/1 Manrope, sans-serif; letter-spacing: -0.04em; }
 .project-placeholder strong { color: var(--ink); }
@@ -223,8 +221,6 @@ footer .shell { display: flex; justify-content: space-between; gap: 20px; }
 .detail-category { margin: 18px 0 0; color: var(--secondary); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
 .detail-image { display: grid; place-items: center; aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--radius); background: var(--surface-strong); box-shadow: var(--shadow); }
 .detail-image > img { width: 100%; height: 100%; object-fit: contain; }
-body[data-project="fashion-ecommerce"] .detail-image { aspect-ratio: 4 / 3; background: #0c1117; }
-body[data-project="fashion-ecommerce"] .detail-image > img { width: auto; max-width: 90%; height: auto; max-height: 90%; }
 .detail-content { padding-block: clamp(64px, 8vw, 100px); }
 .detail-columns { display: grid; grid-template-columns: minmax(0, 1.38fr) minmax(260px, 0.62fr); gap: clamp(44px, 7vw, 86px); }
 .detail-copy section { margin-bottom: 48px; }
