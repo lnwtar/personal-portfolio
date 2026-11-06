@@ -90,6 +90,17 @@ for (const viewport of viewports) {
   if (viewport.width === 390 || viewport.width === 1440) {
     await scrollThrough(page);
     await page.screenshot({ path: path.join(output, `detail-${viewport.width}.png`), fullPage: true });
+
+    await page.goto(`${baseUrl}/projects/project.html?slug=fashion-ecommerce`, { waitUntil: 'networkidle' });
+    await page.locator('#gallery-viewer:not([hidden])').waitFor();
+    assert.equal((await page.locator('#gallery-counter').textContent()).trim(), '1 / 8');
+    assert.ok(await page.locator('#gallery-open').evaluate(element => element.classList.contains('is-portrait')));
+    const imageRatios = await page.locator('#gallery-active').evaluate(image => ({
+      natural: image.naturalWidth / image.naturalHeight,
+      rendered: image.getBoundingClientRect().width / image.getBoundingClientRect().height,
+    }));
+    assert.ok(Math.abs(imageRatios.natural - imageRatios.rendered) < 0.02, `${viewport.width}px Figma image should preserve its original aspect ratio`);
+    await page.locator('.project-gallery-section').screenshot({ path: path.join(output, `figma-gallery-${viewport.width}.png`) });
   }
   if (errors.length) failures.push(`${viewport.width}x${viewport.height}: ${errors.join(' | ')}`);
   await context.close();

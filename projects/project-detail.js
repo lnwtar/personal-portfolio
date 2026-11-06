@@ -36,6 +36,7 @@ function updateGallery(nextIndex) {
   active.src = asset(item.src);
   active.srcset = item.srcset ? item.srcset.split(', ').map(entry => `../${entry}`).join(', ') : '';
   active.alt = item.alt || '';
+  $('#gallery-open').classList.toggle('is-portrait', item.orientation === 'portrait');
   $('#gallery-caption').textContent = item.caption || item.alt || '';
   $('#gallery-counter').textContent = `${galleryState.index + 1} / ${total}`;
   $('#gallery-status').textContent = `${total} verified image${total === 1 ? '' : 's'}`;
@@ -168,6 +169,7 @@ async function init() {
     const currentIndex = projects.findIndex(item => item.slug === slug);
     if (currentIndex < 0) throw new Error('Project not found');
     const project = projects[currentIndex];
+    document.body.dataset.project = project.slug;
 
     document.title = `${project.title} — Kantaphon Thanwisetuaong`;
     document.querySelector('meta[name="description"]').content = project.summary;

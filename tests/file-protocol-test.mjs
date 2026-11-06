@@ -37,7 +37,9 @@ try {
   await page.goto(detailUrl, { waitUntil: 'load' });
   await page.locator('#detail-title').waitFor({ state: 'visible' });
   assert.equal((await page.locator('#detail-title').innerText()).trim(), 'AI Fashion Shopping & Outfit Matching');
-  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 5');
+  assert.equal((await page.locator('#gallery-counter').innerText()).trim(), '1 / 8');
+  assert.match(await page.locator('#gallery-active').getAttribute('src'), /figma-shopping-login\.png$/);
+  assert.equal(await page.locator('#gallery-open').evaluate(element => element.classList.contains('is-portrait')), true);
   assert.match(await page.title(), /Kantaphon Thanwisetuaong$/);
 
   const rehabUrl = `${pathToFileURL(path.join(root, 'projects', 'project.html')).href}?slug=smart-rehab`;

@@ -38,7 +38,7 @@ function renderProjects() {
     });
   projectCount.textContent = `${visible.length} project${visible.length === 1 ? '' : 's'}`;
   grid.innerHTML = visible.map((project, index) => `
-    <article class="project-card${index === 0 ? ' project-card--featured' : ''}" data-category="${escapeHtml((project.filters || [project.category]).join(' '))}">
+    <article class="project-card${index === 0 ? ' project-card--featured' : ''}" data-project="${escapeHtml(project.slug)}" data-category="${escapeHtml((project.filters || [project.category]).join(' '))}">
       <a class="project-visual" href="${projectHref(project)}" aria-label="Open ${escapeHtml(project.title)} project details">
         ${coverMarkup(project)}
       </a>

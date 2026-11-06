@@ -269,19 +269,40 @@ window.PORTFOLIO_PROJECTS = [
     "solution": "The app combines a product catalog with AI-assisted styling, helping users compare clothing, build matching outfits, and complete purchases in one mobile flow.",
     "gallery": [
       {
-        "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
-        "alt": "Figma mobile shopping home screen with promotional content, categories, product cards, and bottom navigation.",
-        "caption": "Shopping home feed exported from the original Figma design."
-      },
-      {
         "src": "assets/projects/fashion-ecommerce/figma-shopping-login.png",
         "alt": "Figma sign-in screen for the Shopping Magic mobile app.",
-        "caption": "Authentication screen exported from the original Figma design."
+        "caption": "Authentication screen exported from the original Figma design.",
+        "orientation": "portrait"
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-home.png",
+        "alt": "Figma mobile shopping home screen with promotional content, categories, product cards, and bottom navigation.",
+        "caption": "Shopping home feed exported from the original Figma design.",
+        "orientation": "portrait"
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-notifications.png",
+        "alt": "Figma shopping notification center showing promotions, live updates, and order activity.",
+        "caption": "Notification center for promotions, content updates, and order activity.",
+        "orientation": "portrait"
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-profile.png",
+        "alt": "Figma customer profile screen showing account statistics, order shortcuts, and saved shopping sections.",
+        "caption": "Customer profile and order-management shortcuts.",
+        "orientation": "portrait"
       },
       {
         "src": "assets/projects/fashion-ecommerce/figma-shopping-product.png",
-        "alt": "Figma checkout screen showing delivery address, product summary, shipping, total, and payment action.",
-        "caption": "Checkout and payment flow exported from the original Figma design."
+        "alt": "Figma product detail screen for a washing machine with price, rating, seller, chat, cart, and purchase actions.",
+        "caption": "Product detail and purchase actions.",
+        "orientation": "portrait"
+      },
+      {
+        "src": "assets/projects/fashion-ecommerce/figma-shopping-cart.png",
+        "alt": "Figma shopping cart screen with products grouped by seller and quantity controls.",
+        "caption": "Shopping cart grouped by seller with quantity controls.",
+        "orientation": "portrait"
       },
       {
         "src": "assets/projects/fashion-ecommerce/figma-shopping-chat.png",
