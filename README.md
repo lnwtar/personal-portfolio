@@ -8,7 +8,7 @@ A responsive, recruiter-focused portfolio for Kantaphon Thanwisetuaong. The site
 - Accessible sticky navigation and mobile menu
 - Data-driven project gallery with URL-synced category filters
 - Reusable case-study page with thumbnail gallery, previous/next controls, captions, fullscreen lightbox, keyboard support, and touch swipe
-- 59 verified local project images across 10 gallery-backed projects
+- 54 verified local project images across 10 gallery-backed projects
 - Clearly labelled image-request placeholders where project evidence is still missing
 - Public Canva resume link
 - Keyboard focus styles and reduced-motion support

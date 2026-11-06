@@ -38,12 +38,6 @@
         "caption": "V-ResQ research presentation showing the project concept and system context."
       },
       {
-        "src": "assets/projects/v-resq/gallery-02-1600.webp",
-        "srcset": "assets/projects/v-resq/gallery-02-960.webp 960w, assets/projects/v-resq/gallery-02-1600.webp 1600w",
-        "alt": "Binary UDP protocol diagram used to describe control communication.",
-        "caption": "Binary UDP protocol diagram used to describe control communication."
-      },
-      {
         "src": "assets/projects/v-resq/gallery-03-1600.webp",
         "srcset": "assets/projects/v-resq/gallery-03-960.webp 960w, assets/projects/v-resq/gallery-03-1600.webp 1600w",
         "alt": "Hardware and software overview for the V-ResQ prototype.",
@@ -56,34 +50,10 @@
         "caption": "Team-management and timeline screen from the project presentation."
       },
       {
-        "src": "assets/projects/v-resq/gallery-05-1600.webp",
-        "srcset": "assets/projects/v-resq/gallery-05-960.webp 960w, assets/projects/v-resq/gallery-05-1600.webp 1600w",
-        "alt": "V-ResQ team presentation slide documenting the project group.",
-        "caption": "V-ResQ team presentation slide documenting the project group."
-      },
-      {
-        "src": "assets/projects/v-resq/gallery-06-1600.webp",
-        "srcset": "assets/projects/v-resq/gallery-06-960.webp 960w, assets/projects/v-resq/gallery-06-1600.webp 1600w",
-        "alt": "V-ResQ web console showing system overview and connection states.",
-        "caption": "V-ResQ web console showing system overview and connection states."
-      },
-      {
         "src": "assets/projects/v-resq/gallery-07-1600.webp",
         "srcset": "assets/projects/v-resq/gallery-07-960.webp 960w, assets/projects/v-resq/gallery-07-1600.webp 1600w",
         "alt": "Protocol and telemetry status screen in the operator console.",
         "caption": "Protocol and telemetry status screen in the operator console."
-      },
-      {
-        "src": "assets/projects/v-resq/gallery-08-1600.webp",
-        "srcset": "assets/projects/v-resq/gallery-08-960.webp 960w, assets/projects/v-resq/gallery-08-1600.webp 1600w",
-        "alt": "Operator console screen documenting control and safety panels.",
-        "caption": "Operator console screen documenting control and safety panels."
-      },
-      {
-        "src": "assets/projects/v-resq/gallery-09-1600.webp",
-        "srcset": "assets/projects/v-resq/gallery-09-960.webp 960w, assets/projects/v-resq/gallery-09-1600.webp 1600w",
-        "alt": "Telemetry-focused console view from the later prototype iteration.",
-        "caption": "Telemetry-focused console view from the later prototype iteration."
       },
       {
         "src": "assets/projects/v-resq/robot-operations-console.png",

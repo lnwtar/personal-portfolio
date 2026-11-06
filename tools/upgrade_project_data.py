@@ -23,18 +23,63 @@ def gallery(slug, captions):
 
 UPDATES = {
     "v-resq": {
-        "solution": "The prototype combines a VR operator interface, distributed robot-control services, live telemetry, and explicit safety states so an operator can understand and control the remote system from one workflow.",
-        "gallery": gallery("v-resq", [
-            "V-ResQ research presentation showing the project concept and system context.",
-            "Binary UDP protocol diagram used to describe control communication.",
-            "Hardware and software overview for the V-ResQ prototype.",
-            "Team-management and timeline screen from the project presentation.",
-            "V-ResQ team presentation slide documenting the project group.",
-            "V-ResQ web console showing system overview and connection states.",
-            "Protocol and telemetry status screen in the operator console.",
-            "Operator console screen documenting control and safety panels.",
-            "Telemetry-focused console view from the later prototype iteration.",
-        ]),
+        "solution": "The operator opens one dashboard to move the robot, view the live camera, see nearby obstacles, and check whether each sensor and connection is working.",
+        "gallery": [
+            {
+                "src": "assets/projects/v-resq/gallery-01-1600.webp",
+                "srcset": "assets/projects/v-resq/gallery-01-960.webp 960w, assets/projects/v-resq/gallery-01-1600.webp 1600w",
+                "alt": "V-ResQ research presentation showing the project concept and system context.",
+                "caption": "V-ResQ research presentation showing the project concept and system context.",
+            },
+            {
+                "src": "assets/projects/v-resq/gallery-03-1600.webp",
+                "srcset": "assets/projects/v-resq/gallery-03-960.webp 960w, assets/projects/v-resq/gallery-03-1600.webp 1600w",
+                "alt": "Hardware and software overview for the V-ResQ prototype.",
+                "caption": "Hardware and software overview for the V-ResQ prototype.",
+            },
+            {
+                "src": "assets/projects/v-resq/gallery-04-1600.webp",
+                "srcset": "assets/projects/v-resq/gallery-04-960.webp 960w, assets/projects/v-resq/gallery-04-1600.webp 1600w",
+                "alt": "Team-management and timeline screen from the project presentation.",
+                "caption": "Team-management and timeline screen from the project presentation.",
+            },
+            {
+                "src": "assets/projects/v-resq/gallery-07-1600.webp",
+                "srcset": "assets/projects/v-resq/gallery-07-960.webp 960w, assets/projects/v-resq/gallery-07-1600.webp 1600w",
+                "alt": "Protocol and telemetry status screen in the operator console.",
+                "caption": "Protocol and telemetry status screen in the operator console.",
+            },
+            {
+                "src": "assets/projects/v-resq/robot-operations-console.png",
+                "alt": "V-ResQ robot operations dashboard with driving controls, live camera, sensor readings, and smart-assist status.",
+                "caption": "One screen brings together robot driving, live video, sensor data, obstacle distance, and smart-assist status.",
+            },
+            {
+                "src": "assets/projects/v-resq/robot-local-map-telemetry.png",
+                "alt": "V-ResQ local map and telemetry panels showing robot position and live system data.",
+                "caption": "The local map shows the robot position while the telemetry panel reports live system data.",
+            },
+            {
+                "src": "assets/projects/v-resq/protocol-monitor.png",
+                "alt": "V-ResQ protocol monitor showing connection health, frame integrity, and robot subsystem status.",
+                "caption": "The protocol monitor checks whether the robot connection and its data are working correctly.",
+            },
+            {
+                "src": "assets/projects/v-resq/robot-diagnostics.png",
+                "alt": "V-ResQ diagnostics dashboard showing command health, camera status, operator notes, and raw data.",
+                "caption": "A diagnostics view helps the team find connection, camera, and command problems.",
+            },
+            {
+                "src": "assets/projects/v-resq/node-inspector.png",
+                "alt": "V-ResQ node inspector with robot identity, sensor telemetry, and raw JSON data.",
+                "caption": "The node inspector summarizes the selected robot, its sensors, and the data it sends.",
+            },
+            {
+                "src": "assets/projects/v-resq/oled-hardware-status.png",
+                "alt": "OLED screens on the V-ResQ robot showing network identity and connection status.",
+                "caption": "OLED hardware screens confirm the robot's network identity and connection state directly on the device.",
+            },
+        ],
     },
     "badminton-pose-analysis": {
         "solution": "A local web workflow accepts video or webcam input, detects body landmarks, classifies stroke phases, and presents technique feedback in a readable dashboard instead of exposing raw landmark data.",
