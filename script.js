@@ -8,6 +8,7 @@ const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('#nav-menu');
 const backTop = document.querySelector('.back-top');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const projectPriority = ['fashion-ecommerce', 'v-resq', 'badminton-pose-analysis'];
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;'
@@ -25,10 +26,19 @@ function coverMarkup(project) {
 
 function renderProjects() {
   if (!grid) return;
-  const visible = state.projects.filter(project => state.filter === 'all' || project.category === state.filter);
+  const originalOrder = new Map(state.projects.map((project, index) => [project.slug, index]));
+  const visible = state.projects
+    .filter(project => state.filter === 'all' || (project.filters || [project.category]).includes(state.filter))
+    .sort((first, second) => {
+      const firstPriority = projectPriority.indexOf(first.slug);
+      const secondPriority = projectPriority.indexOf(second.slug);
+      const firstRank = firstPriority === -1 ? 100 + originalOrder.get(first.slug) : firstPriority;
+      const secondRank = secondPriority === -1 ? 100 + originalOrder.get(second.slug) : secondPriority;
+      return firstRank - secondRank;
+    });
   projectCount.textContent = `${visible.length} project${visible.length === 1 ? '' : 's'}`;
-  grid.innerHTML = visible.map(project => `
-    <article class="project-card" data-category="${escapeHtml(project.category)}">
+  grid.innerHTML = visible.map((project, index) => `
+    <article class="project-card${index === 0 ? ' project-card--featured' : ''}" data-category="${escapeHtml((project.filters || [project.category]).join(' '))}">
       <a class="project-visual" href="${projectHref(project)}" aria-label="Open ${escapeHtml(project.title)} project details">
         ${coverMarkup(project)}
       </a>
@@ -47,7 +57,7 @@ function renderProjects() {
   if (!reduceMotion) {
     grid.querySelectorAll('.project-card').forEach((card, index) => card.animate(
       [{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'translateY(0)' }],
-      { duration: 280, delay: Math.min(index * 35, 210), easing: 'ease-out' }
+      { duration: 420, delay: Math.min(index * 35, 210), easing: 'cubic-bezier(0.16, 1, 0.3, 1)' }
     ));
   }
 }
@@ -106,14 +116,6 @@ navMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', ()
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && navMenu?.classList.contains('is-open')) closeNavigation({ restoreFocus: true });
 });
-
-const revealObserver = 'IntersectionObserver' in window && !reduceMotion ? new IntersectionObserver(entries => entries.forEach(entry => {
-  if (entry.isIntersecting) {
-    entry.target.classList.add('is-visible');
-    revealObserver.unobserve(entry.target);
-  }
-}), { threshold: 0.12 }) : null;
-document.querySelectorAll('.reveal').forEach(element => revealObserver ? revealObserver.observe(element) : element.classList.add('is-visible'));
 
 const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.nav-menu a[href^="#"]')];

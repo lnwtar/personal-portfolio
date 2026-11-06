@@ -51,6 +51,16 @@ for (const viewport of viewports) {
   await page.goto(`${baseUrl}/index.html`, { waitUntil: 'networkidle' });
   await page.locator('.project-card').first().waitFor();
   assert.equal(await page.locator('.project-card').count(), 11, `${viewport.width}px should render 11 projects`);
+  assert.ok(
+    await page.locator('.hero-copy h1').evaluate(element => element.scrollWidth <= element.clientWidth + 1),
+    `${viewport.width}px hero heading should not split or overflow the name`,
+  );
+  const featuredCard = page.locator('.project-card--featured');
+  assert.equal(await featuredCard.count(), 1, `${viewport.width}px should have one clear featured project`);
+  if (viewport.width >= 821) {
+    const featuredBody = await featuredCard.locator('.project-body').boundingBox();
+    assert.ok(featuredBody?.width >= 220, `${viewport.width}px featured project copy should remain visible beside its image`);
+  }
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.ok(overflow <= 1, `${viewport.width}px home page overflows by ${overflow}px`);
 

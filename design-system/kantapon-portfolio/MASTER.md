@@ -2,10 +2,10 @@
 
 ## Direction
 
-- Tone: professional, calm, evidence-led technical portfolio.
+- Tone: professional, calm, evidence-led web developer portfolio.
 - Signature element: a large 16:9 project image with a thumbnail filmstrip on case-study pages.
-- Visual hierarchy: project evidence first; decoration remains secondary.
-- Motion: short opacity/translate reveals and restrained hover feedback only; no parallax or auto-rotating media.
+- Visual hierarchy: web and interface work leads; project evidence stays ahead of decoration.
+- Motion: one restrained hero entrance plus responsive state feedback; no repeated section reveals, parallax, or auto-rotating media.
 
 ## Foundations
 
@@ -35,6 +35,7 @@
 
 - Content width: 1180 px maximum with fluid side gutters.
 - Cards: `repeat(auto-fit, minmax(min(100%, 330px), 1fr))`.
+- The first visible project spans two columns on desktop to break card-grid monotony and establish a clear starting point.
 - Project covers: 16:9, `object-fit: contain` so UI screenshot text is not cropped.
 - Responsive breakpoints: 820 px for navigation and major columns; 620 px for compact mobile controls; 360 px for 320-wide devices.
 - Never hide global horizontal overflow; fix overflow at the component that causes it.
@@ -53,3 +54,5 @@
 - If imagery is missing, show a labelled request describing the exact screenshot or photo needed.
 - GitHub links appear only when a verified repository URL exists.
 - Every gallery item needs a concise alt description and visible caption.
+- Do not publish empty experience placeholders, “add URL” labels, eyebrow text, or decorative section numbers.
+- Web-relevant work appears first and the Web filter must always return real projects.

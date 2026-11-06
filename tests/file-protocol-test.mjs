@@ -19,6 +19,15 @@ try {
   assert.match(await page.locator('h1').innerText(), /Kantaphon\s+Thanwisetuaong\./);
   assert.equal((await page.locator('#project-count').innerText()).trim(), '11 projects');
   assert.equal(
+    (await page.locator('.project-card h3').first().innerText()).trim(),
+    'AI Fashion Shopping & Outfit Matching',
+    'Web-relevant interface work should lead the project grid',
+  );
+  await page.locator('.filter[data-filter="web"]').click();
+  assert.equal(await page.locator('.project-card').count(), 3, 'Web filter should show the three projects with web interfaces');
+  assert.equal((await page.locator('#project-count').innerText()).trim(), '3 projects');
+  await page.locator('.filter[data-filter="all"]').click();
+  assert.equal(
     await page.locator('a[href="https://canva.link/dc9a3ov0nlx5l56"]').count(),
     3,
     'All homepage resume actions should use the approved Canva link',
