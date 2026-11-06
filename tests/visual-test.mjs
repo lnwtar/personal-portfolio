@@ -93,6 +93,10 @@ for (const viewport of viewports) {
 
     await page.goto(`${baseUrl}/projects/project.html?slug=fashion-ecommerce`, { waitUntil: 'networkidle' });
     await page.locator('#gallery-viewer:not([hidden])').waitFor();
+    await page.waitForFunction(() => {
+      const image = document.querySelector('#gallery-active');
+      return image?.complete && image.naturalWidth > 0;
+    });
     assert.equal((await page.locator('#gallery-counter').textContent()).trim(), '1 / 9');
     assert.ok(await page.locator('#gallery-open').evaluate(element => element.classList.contains('is-portrait')));
     const imageRatios = await page.locator('#gallery-active').evaluate(image => ({

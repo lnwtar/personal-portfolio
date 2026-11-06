@@ -17,6 +17,11 @@ try {
   await page.locator('.project-card').first().waitFor({ state: 'visible' });
   assert.equal(await page.locator('.project-card').count(), 11, 'All projects should render through file://');
   assert.match(await page.locator('h1').innerText(), /Kantaphon\s+Thanwisetuaong\./);
+  assert.match(
+    await page.locator('.portrait-frame img').getAttribute('src'),
+    /assets\/images\/profile-studio\.png$/,
+    'Homepage should use the approved studio portrait',
+  );
   assert.equal((await page.locator('#project-count').innerText()).trim(), '11 projects');
   assert.equal(
     (await page.locator('.project-card h3').first().innerText()).trim(),
