@@ -9,15 +9,27 @@
 
 ## Foundations
 
-- Background: `#FFFFFF`
-- Surface: `#F6F8FB`
-- Ink: `#172235`
-- Muted text: `#5D6B7E`
-- Accent: `#295FBD`
-- Border: `#DCE3EC`
+- Primary / Midnight Blue: `#243746`
+- Secondary / Dusty Blue: `#54758A`
+- Detail accent / Sage Mist: `#93A9A3`
+- Background / Warm Ivory: `#F5F1E8`
+- CTA highlight / Sand Gold: `#D6BA93`
+- Card surface: `#FFFFFF`
+- Muted text on Warm Ivory: `#4F6F83` (an accessible, slightly darker derivative of Dusty Blue)
+- Soft surface: `#FBF9F4`
+- Strong surface: `#E7ECE9`
+- Border: `#CBD5D1`
 - Display type: Manrope
 - Body type: DM Sans
 - Radius: 12–18 px for interface surfaces; 26 px for the primary contact panel.
+
+## Color Usage
+
+- Keep Warm Ivory and white as the majority of every page.
+- Use Midnight Blue for primary text, research/contact sections, and roughly 20–30% of the overall composition.
+- Use Dusty Blue for navigation and links on white surfaces.
+- Use Sage Mist for decorative lines, borders, and small details; never for normal text on Warm Ivory.
+- Use Sand Gold sparingly for primary CTAs and highlights, always with Midnight Blue text.
 
 ## Layout
 
